@@ -1,0 +1,170 @@
+{
+  "Contributors": [
+    "Amulya Arun Ballakur"
+  ],
+  "Source": [
+    "triviaqa"
+  ],
+  "URL": [
+    "https://arxiv.org/abs/1705.03551"
+  ],
+  "Categories": [
+    "Question Answering"
+  ],
+  "Reasoning": [],
+  "Definition": [
+    "In this task you are given a question. You need to generate an answer to the question."
+  ],
+  "Input_language": [
+    "English"
+  ],
+  "Output_language": [
+    "English"
+  ],
+  "Instruction_language": [
+    "English"
+  ],
+  "Domains": [
+    "Web",
+    "Wikipedia"
+  ],
+  "Positive Examples": [
+    {
+      "input": "Question:Who was the man behind The Chipmunks?",
+      "output": "David Seville",
+      "explanation": "David Seville was the man behind the Chipmunks."
+    },
+    {
+      "input": "Question:What star sign is Jamie Lee Curtis?",
+      "output": "Scorpio",
+      "explanation": "The star sign of Jamie Lee Curtis is Scorpio."
+    },
+    {
+      "input": "Question: Which Lloyd Webber musical premiered in the US on 10th December 1993?",
+      "output": "Sunset Boulevard",
+      "explanation": "His musical premier in the US was with Sunset Boulevard."
+    },
+    {
+      "input": "Question: The Euro is divided into how many cents?",
+      "output": "100",
+      "explanation": "The Euro is divided into 100 cents."
+    }
+  ],
+  "Negative Examples": [
+    {
+      "input": "Question:Who was the man behind The Chipmunks?",
+      "output": "Alvin Seville",
+      "explanation": "David Seville was the man behind the Chipmunks. This is an incorrect answer."
+    },
+    {
+      "input": "Question:What star sign is Jamie Lee Curtis?",
+      "output": "Tony Curtis",
+      "explanation": "The star sign of Jamie Lee Curtis is Scorpio. It is an incorrect answer to the question."
+    },
+    {
+      "input": "Question: Which Lloyd Webber musical premiered in the US on 10th December 1993?",
+      "output": "The Phantom of the Opera",
+      "explanation": "His musical premier in the US was with Sunset Boulevard. This is an incorrect answer to the question."
+    },
+    {
+      "input": "Question: The Euro is divided into how many cents?",
+      "output": "13000",
+      "explanation": "The Euro is divided into 100 cents. This is an incorrect answer."
+    }
+  ],
+  "Instance License": [
+    "Apache 2.0"
+  ],
+  "Instances": [
+    {
+      "id": "task1564-7021d28a6a044003beaf730ffdc936cc",
+      "input": "Question: What international event held at the end of each year, featuring some of the world's best racing and rally drivers, was first co-organised in 1988 by former rally driver Michle Mouton?",
+      "output": [
+        "Tetra"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9873186945915222
+    },
+    {
+      "id": "task1564-ccaeb8b3de3847c7ae3e2b59ae243836",
+      "input": "Question:Benot B. Mandelbrot worked on a wide range of mathematical problems, including mathematical physics and quantitative finance, but is best known as the father of what?",
+      "output": [
+        "Math Practice"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9989738464355469
+    },
+    {
+      "id": "task1564-76b3e2fbfa7f4de7b5f15010163a1a95",
+      "input": "Question:In 2010, what North American horse broke the All-time North American female earnings record with over $6 million, broke two world records for Grade/Group I (for consecutive victories and the All-time North American record number of victories by a filly/mare), and tied the All-time North American record for the number of consecutive victories without defeat?",
+      "output": [
+        "Los Alamitos Two-Million"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.998230516910553
+    },
+    {
+      "id": "task1564-fe6b85f8a39d420f91c8b2f1110cf388",
+      "input": "Question:Which event held in Alberta, Canada, which bills itself as The Greatest Outdoor Show on Earth, is a large festival, exhibition, and rodeo held for 10 days every summer in July, attracts more than 1.2 million visitors?",
+      "output": [
+        "Calgary Stampede"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9996753931045532
+    },
+    {
+      "id": "task1564-79fb460166a94598a4d54eedf19b4138",
+      "input": "Question:Ivan Galamian has had world-wide influence as a teacher of what?",
+      "output": [
+        "Violin"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.997119665145874
+    },
+    {
+      "id": "task1564-649ae0a7224e4be481efd63c02e56207",
+      "input": "Question:The mountain massif called Maxwell Montes contains the highest point on the surface of which planet?",
+      "output": [
+        "Venus"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5347627401351929
+    },
+    {
+      "id": "task1564-0dec3204bd194249867e0846be1c5f77",
+      "input": "Question:James Esdaile, John Elliotson, Jean-Martin Charcot, Hippolyte Bernheim, Pierre Janet, mile Cou, Morton Prince, Clark L. Hull, Andrew Salter, Theodore R. Sarbin, Ernest Hilgard, Martin Theodore Orne, and Nicholas Spanos are associated with what?",
+      "output": [
+        "hypnosis"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.893288791179657
+    },
+    {
+      "id": "task1564-8ad0b0419ec5492c9421cb9cc2f15095",
+      "input": "Question:What video game, created by Notch, is the best-selling PC game of all-time?",
+      "output": [
+        "sandbox indie"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9936034083366394
+    },
+    {
+      "id": "task1564-57a109b1819b486db7b485d7942fe199",
+      "input": "Question:Which 2008 Western film starred Ed Harris and Viggo Mortensen as lawmen, Jeremy Irons as a rancher and Renee Zellweger as a piano-playing widow?",
+      "output": [
+        "Appaloosa"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5326871275901794
+    },
+    {
+      "id": "task1564-fc9745e6742f4be49ee7059e0020eb00",
+      "input": "Question:What is the name given to the triangular savoury Indian pasties filled with meat or vegetables and seasoned with herbs and spices",
+      "output": [
+        "dumplings"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9868761301040649
+    }
+  ]
+}

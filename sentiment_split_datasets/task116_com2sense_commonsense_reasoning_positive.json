@@ -1,0 +1,3002 @@
+{
+  "Contributors": [
+    "Pegah Alipoormolabashi"
+  ],
+  "Source": [
+    "com2sense"
+  ],
+  "URL": [
+    "https://github.com/PlusLabNLP/Com2Sense"
+  ],
+  "Categories": [
+    "Commonsense Classification"
+  ],
+  "Reasoning": [
+    "Commonsense Reasoning"
+  ],
+  "Definition": [
+    "You will be given a piece of text either about an everyday event, or a general statement. If the event seems a plausible event to you, or the general statement makes sense matches your commonsense, output 'True', otherwise output 'False'."
+  ],
+  "Input_language": [
+    "English"
+  ],
+  "Output_language": [
+    "English"
+  ],
+  "Instruction_language": [
+    "English"
+  ],
+  "Domains": [
+    "Commonsense -> Concepts and Relations"
+  ],
+  "Positive Examples": [
+    {
+      "input": "The glass fell of a three-story building, so it broke into pieces.",
+      "output": "True",
+      "explanation": "Falling down from a considerable height causes glasses to break, so this is a true sentence."
+    },
+    {
+      "input": "Marry was going out to work, so she asked her sixteen-year-old daughter to take care of her five-year-old son.",
+      "output": "True",
+      "explanation": "It makes sense to ask a teenage person to take care of their child sibling, so this is a true sentence."
+    },
+    {
+      "input": "Johnathan didn't have a hammer, so he used a cotton pad to drive the nail into the wood.",
+      "output": "False",
+      "explanation": "This sentence is not true, because cotton pads are soft and therefore can not be proper substitutes for hammers."
+    },
+    {
+      "input": "Suraya's best friend is getting married soon, so she will likely choose to go on a trip instead of helping her friend organize the ceremony.",
+      "output": "False",
+      "explanation": "This sentence is not true, because people tend to help their best friends when they have a big event, like a wedding, coming soon."
+    }
+  ],
+  "Negative Examples": [
+    {
+      "input": "For the twenty guests Sam was going to have over for dinner, she ordered two small pizzas.",
+      "output": "True",
+      "explanation": "Two small pizzas is not enough dinner for twenty people, so this sentence is not true."
+    },
+    {
+      "input": "Ali has decided to get up early from now on, so he is likely to go to bed later than before.",
+      "output": "True",
+      "explanation": "People are likely to go to bed earlier if they want to get up sooner, so this sentence is not true."
+    },
+    {
+      "input": "Jacob lives a 15-minute drive away from his office, so in order to be on-time for his 8 am meeting, he should leave home by 7:45.",
+      "output": "False",
+      "explanation": "Given the 15 minute driving time to a place, one should leave at least 15 minute before an event to catch it on-time, so this sentence is true."
+    },
+    {
+      "input": "My smart neighbour adviced me to use a paper tape to fix the hole in my bath tub.",
+      "output": "True",
+      "explanation": "Bath tubs are filled with water and a paper tape will dissolve in a bath tub, so a smart person would not give such an advice."
+    },
+    {
+      "input": "After a year of consistent practice, Jennifer was able to run a marathon.",
+      "output": "Correct",
+      "explanation": "The output should be either 'True' or 'False'."
+    }
+  ],
+  "Instance License": [
+    "Unknown"
+  ],
+  "Instances": [
+    {
+      "id": "task116-76cc2f0640b84e69a47cbfc902bc1fd1",
+      "input": "Following the \"stay-at-home\" order, the CEO is likely to wear slippers more often than any other shoes even when at work.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8262922167778015
+    },
+    {
+      "id": "task116-39ad5d86f1a2489ba34fae4ae0be1300",
+      "input": "In the middle of the night I like to draw the shades to keep the furniture nearby from fading.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9991382360458374
+    },
+    {
+      "id": "task116-33a7ac84177b431a88cdaca4569a515d",
+      "input": "Professional athletes can run more miles than casual runners in a 15 minutes running event.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9831827878952026
+    },
+    {
+      "id": "task116-0617646209bc4d55a816bd6191f94ae0",
+      "input": "Bob believes in the tooth fairy, so he can be very young.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9953315854072571
+    },
+    {
+      "id": "task116-7366a58dad5a448abc342079c394b74c",
+      "input": "Millie is an artist while Bobby is a teacher and Millie is more likely to win the art competition.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9748409986495972
+    },
+    {
+      "id": "task116-fe71d05b88c344bcb80d27c9485e2867",
+      "input": "Amanda usually puts five crackers in her bowl of soup so she can savor the soup's flavor.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.987798273563385
+    },
+    {
+      "id": "task116-a4ad745578154fa6b354162571c852c4",
+      "input": "The room temporature of the sauna is so hot that I spend hours just getting used to it.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7178362011909485
+    },
+    {
+      "id": "task116-d1e0840325a3425285b2117564562f3f",
+      "input": "The storm is supposed to hit in 50 minutes and I love running in the rain so I'll go on a run in 5 minutes.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9816154837608337
+    },
+    {
+      "id": "task116-cbd418076ee3422b8663c302fb24619d",
+      "input": "When adjusting music volume levels to their max settings, it will improve a person's hearing.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9969668984413147
+    },
+    {
+      "id": "task116-740a40a4c6b94431bf9d2058279f7d74",
+      "input": "A tall person can fit through a 7 foot doorway more easily than a 6 foot doorway.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9835737943649292
+    },
+    {
+      "id": "task116-22bd415015f343c0bca31c529d405f22",
+      "input": "Mary is a counselor, while Jennifer is a librarian; Mary is more likely to be able to recommend a good book than Jennifer.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7337172031402588
+    },
+    {
+      "id": "task116-0891a001ed454ac9815ec6b29f0f46bb",
+      "input": "Peter invited his neighbor Jonathan for dinner, it's expected that Jonathan would arrive on time for lunch.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9379191398620605
+    },
+    {
+      "id": "task116-9272db9f7be54d9c99879a23c9f3ad19",
+      "input": "It's Jill's birthday, so it's likely she will bring her friend Sally a gift.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9994115829467773
+    },
+    {
+      "id": "task116-cdab70b7d0c54d56b6c13847b2cb9b21",
+      "input": "Jack has better chances of becoming a gymnast because he is higher than most men.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7069702744483948
+    },
+    {
+      "id": "task116-ab913e3753ec4533baf3e540927e7d11",
+      "input": "It is less to painful to have a hug than surgery",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9907829165458679
+    },
+    {
+      "id": "task116-951d0495ae85408287aa76770d0957b0",
+      "input": "Mary is interested in gardening. Her husband Tom enjoys mowing the grass. Tom and Mary are likely to hire a lawn maintenance company.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.960135281085968
+    },
+    {
+      "id": "task116-d46d0785946c451586ac320a34b35fa5",
+      "input": "Susan visits houses to deliver pizza, while Jim visits to fix plumbing, so Jim is more likely to be invited in.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5957288146018982
+    },
+    {
+      "id": "task116-375eb7b6f6b44d24a8414247b8d3c60d",
+      "input": "Since I need to speak to the customers who are waiting in my office, I can walk to the cafe and get a cup of coffee now.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8798719644546509
+    },
+    {
+      "id": "task116-37676ed309564c698578aafe04130242",
+      "input": "To travel to Iceland from California, it is faster to fly on a plane rather than take a boat.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8434972763061523
+    },
+    {
+      "id": "task116-14960f3579034fb28e4477c1abaa0482",
+      "input": "If someone gives you a birthday present, they should say Happy New Year.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9969683289527893
+    },
+    {
+      "id": "task116-50bb2f66199d4ff58c0d145e9ae8d312",
+      "input": "Desire to become rich in a short period of time forces people to adopt more undue practices.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.654695987701416
+    },
+    {
+      "id": "task116-d9814ec64da74fd99058dc46980a2967",
+      "input": "It is a general trend for people to spend more during festival seasons than other times.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9890346527099609
+    },
+    {
+      "id": "task116-d6b6c7984111404bb3f475cf3d017f56",
+      "input": "Jerry wanted to buy a computer for many years, he prayed hard for it and he was obliged by god.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9231687188148499
+    },
+    {
+      "id": "task116-1fa98d0ccc6943cead7de4aa53fa30a9",
+      "input": "Still two years away from being legal but hoping to get into the bar, she was pleased that the bouncer thought she was five years older rather than five years younger than she was.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9943589568138123
+    },
+    {
+      "id": "task116-25c6baf76ddb40d788dc823bc2fdc317",
+      "input": "Since I've only had my new job for 2 weeks, I don't think my boss would have a problem with me going on vacation soon.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9876639246940613
+    },
+    {
+      "id": "task116-fca93555a7824c45accbc92ee03d5d31",
+      "input": "I usually wake up around 8 am, so I have many chances to see the sunrise.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9969143867492676
+    },
+    {
+      "id": "task116-b5321b054bcb4423888a2dd6b098070b",
+      "input": "Greg is a good student and he scored 80 on his math quiz while the average was 90, so his parents took him out for dinner to comfort him.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9994962215423584
+    },
+    {
+      "id": "task116-8d491d7aab9743cb9ce678199a748b16",
+      "input": "Jerry keeps the pair of rain coat with her in case of rainy days.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9710654616355896
+    },
+    {
+      "id": "task116-937190222bb44f4b91cbff7f1b89e9fa",
+      "input": "Gregory started working at the store when he was eighteen. In two decades, he is in basic training.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9952536821365356
+    },
+    {
+      "id": "task116-0085993a7d884a7db22bde2a4a280828",
+      "input": "Since he'd be driving in the middle of the night, John was sure to take his sunglasses.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.987343430519104
+    },
+    {
+      "id": "task116-3a104f080a604ed3b5e6a9b57328a889",
+      "input": "Picking a scab off a wound will make the wound heal faster than not picking the scab off.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7159467339515686
+    },
+    {
+      "id": "task116-b260834d27114998a40a95ea53a4c9b8",
+      "input": "A couple had two daughters who are over 15 years old, so they got admission in Women higher secondary school.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9445528388023376
+    },
+    {
+      "id": "task116-13511e948053416ca549538ada5f1819",
+      "input": "John is a bank teller and Ken is a diplomat. Ken probably travels abroad more often than John.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9295674562454224
+    },
+    {
+      "id": "task116-a7b2d8df98d54c098aa8ea8656422576",
+      "input": "A nurse is likely to inform the family that after a few months of labor, the baby will be born.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9399377703666687
+    },
+    {
+      "id": "task116-0d9f448608014255ac09573f643de1d3",
+      "input": "The number of basketballs that container could hold was seventeen basketballs, if we had fourteen basketballs, this would be perfectly okay.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7958018779754639
+    },
+    {
+      "id": "task116-a2c28cb13137460ab43827ce2615cded",
+      "input": "Jane is a British fashion designer who loves input from exotic parts of the world. She's likely to be interested in fashion ideas from Madagascar.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9990703463554382
+    },
+    {
+      "id": "task116-2d09d89909f34dc8ae1949e0a346ec17",
+      "input": "John knew Lisa was in a serious relationship, so it was ok for him to ask her on a date for Valentine's Day.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9993929862976074
+    },
+    {
+      "id": "task116-02c65ba9bb4f404f9ada0881e2abb262",
+      "input": "Peter and Paul work at nights in alternate days, meaning Peter works one night, next night Paul and so on, last Monday Peter was at work, so this Monday Paul will be at work.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9614320397377014
+    },
+    {
+      "id": "task116-4343b68a59214384b03a8c1f20d0f555",
+      "input": "If someone gives you a birthday present, they should say Happy Birthday.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9984999895095825
+    },
+    {
+      "id": "task116-e68ad023d28443bb94a25614a84978a2",
+      "input": "Mary prefers warm weather but Shelly loves the snow, so Shelly is more likely to be found at the beach.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9879816174507141
+    },
+    {
+      "id": "task116-b79929b3ee294ffda61dbc4005f342ce",
+      "input": "The sun was getting in Jeff's eyes so he put on his cap forward rather than backward.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9311579465866089
+    },
+    {
+      "id": "task116-96f71dbc94f14cc69fecf7a93ac46869",
+      "input": "My dad mows the lawn every week, and my mom gives me a pair of socks every Christmas. I'm likely to appreciate my father more than my mother.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997391104698181
+    },
+    {
+      "id": "task116-13e061fa654b4ecf85d33d02a3e2322d",
+      "input": "As the experiment takes 48 hours to complete and was started this evening, we will have the results by tomorrow morning.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9922589659690857
+    },
+    {
+      "id": "task116-33fe3b3390104035b9d50ff517390b68",
+      "input": "In the last 10 years, I have eaten all of my meals, done all of my shopping, and entertained myself all at home, while my friend goes out to eat, does all of his shopping, and gets all of his entertainment outside of his home, so my friend is likely to have written more Yelp reviews than I have.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9984159469604492
+    },
+    {
+      "id": "task116-bab6ac6747f94e918f44133fb64c7c3a",
+      "input": "Penny reached office early at 9:45 am to organize the 9:30 am meeting.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9859916567802429
+    },
+    {
+      "id": "task116-a63ac439b7bc435ab5a16c9ab170bf3d",
+      "input": "The rowboat floated easily since it was made of plastic",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9962497353553772
+    },
+    {
+      "id": "task116-511c0ea25f844e2f98d3aa9072cdd019",
+      "input": "Jamie wants to go to a whole-day party on Sunday, so she'll make sure to finish her project by Saturday at the latest.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9281408190727234
+    },
+    {
+      "id": "task116-8cb0db16117b428690d2e2c4bf513055",
+      "input": "Given that Grace is next to perform on stage she will do her make up rather than waiting for her make up artist ",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.999295711517334
+    },
+    {
+      "id": "task116-db4bf36f68c7421eaace743cc55c3781",
+      "input": "A metal chair that was outside in the sun until an hour ago will feel cool on your skin if you sit on it.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9538115859031677
+    },
+    {
+      "id": "task116-b0418d840d954861abdbb5b04e0cc1eb",
+      "input": "When draining pasta, a colander is better than a cheesecloth.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9840065836906433
+    },
+    {
+      "id": "task116-4b408db5b8d34975aac48522c7c699d4",
+      "input": "A tall person can fit through a 4 foot doorway more easily than a 6 foot doorway.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9844927787780762
+    },
+    {
+      "id": "task116-a6217e5d61a24c45bbc376be012e7601",
+      "input": "Hoping to have a good chance at winning first prize at the pie contest, Jane was delighted when she saw that there were two other competitors remaining.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9989142417907715
+    },
+    {
+      "id": "task116-d1e35e2ace0647ad8885c27e34806bc1",
+      "input": "His nine-year-old daughter will start kindergarten in the fall.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9906485676765442
+    },
+    {
+      "id": "task116-a23f6649ea844e7094d1efaa3dc69e43",
+      "input": "A shirt bought fifty years ago is in much better shape than one bought yesterday.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9975976347923279
+    },
+    {
+      "id": "task116-103a5063285e40fba5dca86184f2c1a2",
+      "input": "Erica usually gets off work at 5 pm. She rarely sees the janitor that comes in for a night shift.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6587203741073608
+    },
+    {
+      "id": "task116-4e0d796b86104dae828dde7630e86d34",
+      "input": "Alyssa was rewarded when her parents caught her sneaking out of the house at 1 a.m. on a school night.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9892588257789612
+    },
+    {
+      "id": "task116-f27f078c35f244c18a4b4251aad22a68",
+      "input": "The storm is supposed to hit in 50 minutes and I love running in the rain so I'll go on a run in 50 minutes.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9904404878616333
+    },
+    {
+      "id": "task116-d3b11007c00f4572b7da71a64e349f1e",
+      "input": "Sandra stays home and looks after her four kids, so people would understand if she doesn't wear makeup.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9498118162155151
+    },
+    {
+      "id": "task116-f9c63e335e3c4aca98ca57333da9d3f8",
+      "input": "He went to school and was surprised to find that he had a fifteen year old classmate",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9977261424064636
+    },
+    {
+      "id": "task116-083e9d150c7b43a2ad2cf89e32cd40d1",
+      "input": "Sarah usually stays up late on Friday nights, whereas her roommate Julie usually goes to bed at nine pm. Saturday morning Julie sleeps in and Sarah is up early.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9518991112709045
+    },
+    {
+      "id": "task116-3d62d514c87a4c94a24c35edccbacf46",
+      "input": "He was trying to reduce his daily calorific intake, and did well today, consuming only 20 Kcal.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9901946187019348
+    },
+    {
+      "id": "task116-2176145f561544f5b62fcb3d8b35fc3d",
+      "input": "Marth's child is very athletic, he can sleep up to 10 hours at once.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9910315275192261
+    },
+    {
+      "id": "task116-2c0981ca17ae4f4eb80bd243e401c7ff",
+      "input": "Sally's sister is ten years younger than her so it is more likely Sally will have children first.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8576859831809998
+    },
+    {
+      "id": "task116-99ea8301d0094690ba634bc7fac1d8e0",
+      "input": "A Lego building set is very likely to be a good birthday gift for people who are interested in architecture.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9988204836845398
+    },
+    {
+      "id": "task116-62666286e1274db88793cee4f1c8165c",
+      "input": "A Lego building set is very likely to be a good birthday gift for people who are totally not interested in architecture.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.981526255607605
+    },
+    {
+      "id": "task116-ff27f950de764b299458edce34731df4",
+      "input": "Because he can push a cart, pushing a stroller should not be difficult.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9899560213088989
+    },
+    {
+      "id": "task116-cb0b3c826f934db6a6e62808253e6a80",
+      "input": "Because my natural hair color is black, if I dye my hair blonde, people will likely notice.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9901463389396667
+    },
+    {
+      "id": "task116-e0f8ca50e83944b596239cf07ef4edb4",
+      "input": "Allison has unexpected videoconference so she should walk her dog.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9652354121208191
+    },
+    {
+      "id": "task116-6c894da48c444f8f9777aa07a868b331",
+      "input": "If you run 10 miles, you will feel well rested.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8449899554252625
+    },
+    {
+      "id": "task116-c9d3fd128bd446febaed4bbdf1f543f0",
+      "input": "Someone with 2 kids can never feel more stressed than someone with 8 kids.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7704654932022095
+    },
+    {
+      "id": "task116-7619a41bab5a4152992913620e90fd1b",
+      "input": "1 day after it is born, a cat is physically capable of reproducing.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9968097805976868
+    },
+    {
+      "id": "task116-c3ce49c194be4245b114d4e1457c65b0",
+      "input": "Sally works at a daycare and Jane works as a law firm, so Sally is more likely to be good with children.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9242072701454163
+    },
+    {
+      "id": "task116-1118dde3a67347bc9a78ac96f4811d06",
+      "input": "If a cotton ball is placed on a piece of paper outside on a breezy day, the paper will not blow away.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9863148927688599
+    },
+    {
+      "id": "task116-2dfccac248224d56b927195f35f8cc49",
+      "input": "Since John has to pick up his kids in ten minutes he will start cooking when he gets back.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7729575037956238
+    },
+    {
+      "id": "task116-a18b117bde9b46c88291fb252f246157",
+      "input": "John is gay and has Jack and Martha as close friends. He is more likely to make out with Jack than with Martha.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6907566785812378
+    },
+    {
+      "id": "task116-f39db69f1a534c1289a5fffbdb6fbef8",
+      "input": "You can catch a bird easier than a rock.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9727149605751038
+    },
+    {
+      "id": "task116-095824e303144085b7ae72e8903093ee",
+      "input": "Ryan knew Martha was a dog lover, so he bought her high quality dog food.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9971774816513062
+    },
+    {
+      "id": "task116-a240948e562a4548952f7d26e4851e39",
+      "input": "Following the \"stay-at-home\" order, the CEO is likely to wear leather shoes more often than any other shoes even when at work.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.953053891658783
+    },
+    {
+      "id": "task116-3edab1f2ed1145a2b627474e335adcca",
+      "input": "As they started on the 2 hour journey from home just now, they will reach the office in ten minutes for the meeting.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9859117269515991
+    },
+    {
+      "id": "task116-2f52522620674304b14ad7e6472dc419",
+      "input": "If you have bought some ice cream on a cold day, you will have a few more minutes to enjoy it than on a warm day.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9677760004997253
+    },
+    {
+      "id": "task116-d08ebc34181e46d59c1aa51cbf9c8ec2",
+      "input": "The skills James developed while making jewelry translated well to his later interest in watch repair.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9980916380882263
+    },
+    {
+      "id": "task116-7c05e864290c4de4acd7bb3c8d96d963",
+      "input": "As the temperature has decreased considerably during the last few days, sale of woolen clothes has increased.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9766977429389954
+    },
+    {
+      "id": "task116-bc12503925ae4a4e8824ffebc19b9746",
+      "input": "My sister and I both like tacos so much that we put as many toppings as we can on them. Today my taco has twelve pounds of toppings!",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9980494976043701
+    },
+    {
+      "id": "task116-99d29c2864ac447bb9977596e6714d18",
+      "input": "The sun shines brightly in the blue clear sky. You should not stare at it directly.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9995607733726501
+    },
+    {
+      "id": "task116-af7d9a53ea134553b9e4f8ecb77cd405",
+      "input": "Medical facilities are more important than infrastructural facilities for the general health of the people.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9886825680732727
+    },
+    {
+      "id": "task116-ea5e9b093e6847eb95e897963c48a333",
+      "input": "Alex has been living in her apartment for 3 years, while Ruby has only lived there 3 months. Of the two, Alex is more likely to be able to predict accurate electric costs for the coming months.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5344964265823364
+    },
+    {
+      "id": "task116-1b4ffbd87f014440bd82a079a2959f7e",
+      "input": "Tom loves to barbeque, while Tammy loves to bake, so it's more likely that Tom likes to cook outside, while Tammy likes to cook inside.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5512905716896057
+    },
+    {
+      "id": "task116-ff78a8c52d434ba1977afb177593dd6b",
+      "input": "The skills James developed while making jewelry translated well to his later interest in gardening.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9991229176521301
+    },
+    {
+      "id": "task116-0961afa8484d4054a410d308e9409d95",
+      "input": "A person will not starve to death if they go one day without eating any food.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9604492783546448
+    },
+    {
+      "id": "task116-c296bcd88f994f54b21b57c5f35baf74",
+      "input": "When Chris went to his grandfather's funeral, everybody looked so cheerful there.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9992882609367371
+    },
+    {
+      "id": "task116-d6cffe9f0b71401c99fb96957fb839dc",
+      "input": "Greg is a good student and he scored 80 on his math quiz while the average was 90, so his parents took him out for dinner to celebrate.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.999669075012207
+    },
+    {
+      "id": "task116-5d69d33c61da4737adfe361563f09cb7",
+      "input": "Sarah usually stays up late on Friday nights, whereas her roommate Julie usually goes to bed at nine pm. Saturday morning Sarah sleeps in and Julie is up early.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9525702595710754
+    },
+    {
+      "id": "task116-8acaadc49056498492ecb663f2de1dff",
+      "input": " Still two years away from being legal but hoping to get into the bar, she was pleased that the bouncer thought she was five years younger rather than five years older than she was.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9944376945495605
+    },
+    {
+      "id": "task116-8d2b29683c144f0f86363d34930c30dc",
+      "input": "Carla is married and Kelly is divorced so Kelly is more likely to see her kids everyday.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.774544894695282
+    },
+    {
+      "id": "task116-0494b6d1b5994146ab77c98d6f71f6d7",
+      "input": "You will usually reach your destination faster if you take a car instead of a bus.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8311157822608948
+    },
+    {
+      "id": "task116-33e6d236e4f6441cba6dca269d6c199b",
+      "input": "Jack has enrolled for the 4 year engineering course last month and hence he will graduate at the end of this year.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9983959794044495
+    },
+    {
+      "id": "task116-f35acb9100344a63a50a23468ae04b49",
+      "input": "I love going to the forest to get some fresh air.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9995261430740356
+    },
+    {
+      "id": "task116-c5bc89c9997d486da4aa71d4f5387d1b",
+      "input": "Since John has to pick up his kids in ten minutes he will start cooking now.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9892802834510803
+    },
+    {
+      "id": "task116-06aebb29cb4543debe44e10da0446fdc",
+      "input": "He went to school and was surprised to find he had a forty year old classmate",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9974011182785034
+    },
+    {
+      "id": "task116-616e8540e7af474087a4e46ca25c5dfd",
+      "input": "It is common to ride a scooter to school in the US.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7738618850708008
+    },
+    {
+      "id": "task116-597b73d418d94f3ba3366ab89533370b",
+      "input": "John can run 10K in one hour while Tammy can run a marathon in three hours. Tammy is faster.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9980588555335999
+    },
+    {
+      "id": "task116-3e426bce239d4ec38248775086f19ba7",
+      "input": "If I eat a piece of candy, I can expect to enjoy it for about ten minutes rather than several hours.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9020348191261292
+    },
+    {
+      "id": "task116-a3ba1ac445d948cca3383291010bee85",
+      "input": "Ted is a beginner runner, so he signed up for the 5k race on Saturday instead of the 10k.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6109742522239685
+    },
+    {
+      "id": "task116-c92883fe72b842bf8a9f78ae997c5631",
+      "input": "When draining pasta, cheesecloth is better than a colander.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9780095815658569
+    },
+    {
+      "id": "task116-5cc72fd64b6643a4a4c99395b99cd38b",
+      "input": "Gavin went to the mall a few days before Christmas expecting a lot of people, but he was pleasantly surprised to see only a handful of people.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9893719553947449
+    },
+    {
+      "id": "task116-2b895858695b41478d580da5488bb79c",
+      "input": "The farmers market starts at 8 am on Sunday. So Larry's family picks up the produce at the market Sunday afternoon rather than Saterday afternoon.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9265404343605042
+    },
+    {
+      "id": "task116-438f1ec4e7a847fc9172509294ebf002",
+      "input": "A palm tree that has gone 8 days without water is healthier than a palm tree that has gone 8 years without water.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.876002311706543
+    },
+    {
+      "id": "task116-8123b5b47c794f6787b70f5c518f84ee",
+      "input": "For breakfast, she made some soup, which she also saved for leftovers in a couple of years.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5037736892700195
+    },
+    {
+      "id": "task116-c0b94dccf6f844b6a356ffa09bc2d3bb",
+      "input": "Jonah is trying to lose weight. He is not likely to turn down his friend's invite to go to a buffet.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9950510859489441
+    },
+    {
+      "id": "task116-9888e8c250644dacb99056274365a80b",
+      "input": "Having invited twenty guests over for dinner, he would be comfortable if they all brought a plus one.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9829204678535461
+    },
+    {
+      "id": "task116-2910753200134b8fbd25626f225fb9dc",
+      "input": "It's Jill's birthday, so it's likely her friend Sally will bring her a gift.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9993438124656677
+    },
+    {
+      "id": "task116-1db2a554dc2e468bb594271be4e90162",
+      "input": "I love going to the mall to get some fresh air.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9986248016357422
+    },
+    {
+      "id": "task116-60abcfe4131c45ffa54ca11b8d90b27f",
+      "input": "Cara was swimming in the ocean when she noticed a shark approaching her from a distance, so she swam as fast as possible to get back on the boat.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8911070227622986
+    },
+    {
+      "id": "task116-e5de266af44d4b30b6889190e6c25020",
+      "input": "Chad is a public speaker and Ally is a machinist so Chad is probably more comfortable speaking in crowds.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9715232849121094
+    },
+    {
+      "id": "task116-e22c9a36f416453aa4d382eba81d66f2",
+      "input": "Since I crushed the cardboard box, it became larger in size.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.99759441614151
+    },
+    {
+      "id": "task116-7ec1ae6223e24e8e8c80a124e27fcaa4",
+      "input": "I felt satisfied after taking only 8 months to pay off all my student loans.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9958362579345703
+    },
+    {
+      "id": "task116-779f2029f6f541eb8340dfc5155d0f69",
+      "input": "The immunity of an adult of age 21 years is generally better than a child of age 10 years.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9742257595062256
+    },
+    {
+      "id": "task116-f2720df9ab464d6bacf7de727ba4a529",
+      "input": "A nurse is likely to inform the family that after a few hours of labor, the baby will be born.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9013896584510803
+    },
+    {
+      "id": "task116-61a0463fce114edd8aa700be7b832a59",
+      "input": "Peter and Paul work at nights in alternate days, meaning Peter works one night, next night Paul and so on, last Monday Peter was at work, so this Monday Peter will be at work.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9644797444343567
+    },
+    {
+      "id": "task116-f17fd0f1e9634dd4b615a0a05b8b9fae",
+      "input": "Joe needed to move the couch to the other room, since the couch is bigger than the opening, he can accomplish this.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9958332180976868
+    },
+    {
+      "id": "task116-87986ab8305f49618db87b9ef40b46a2",
+      "input": "Because John removed the steering wheel from his Mercedes, he can drive the Mercedes, as it is, to the beach.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9949325919151306
+    },
+    {
+      "id": "task116-17f1f49a4cf840b7ab9f50132e4a8eb6",
+      "input": "If we need to wait 24 hours for the dough to rise, we don't have to wait tomorrow to bake the cake, so we can do it tonight.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9162299036979675
+    },
+    {
+      "id": "task116-b49062c661ef49d98fdabb8856f27fa2",
+      "input": "Tim and Mary have two kids: Peter at four and Samuel at fifteen, so they are more comfortable leaving Peter at home.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9322375059127808
+    },
+    {
+      "id": "task116-5449ccc4b7d44057b38af08c57fcee89",
+      "input": "It is less to painful to have surgery than a hug",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9852616190910339
+    },
+    {
+      "id": "task116-e2d64700cd484fa6bd1ec0cce3c88fc1",
+      "input": "Since my friend's birthday is today, I should wish her a happy birthday today rather than yesterday.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9982669353485107
+    },
+    {
+      "id": "task116-bd5805e8b7784ec99d699e884e1fedba",
+      "input": "The waiter reserved a table for 10, so he was surprised when 20 guests showed up.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9935792684555054
+    },
+    {
+      "id": "task116-9a84cc806443429c99f20eb7206d836a",
+      "input": "Someone with 2 kids is likely to feel less stressed than someone with 8 kids.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.764051079750061
+    },
+    {
+      "id": "task116-d1064a6b1122434a973da31cfd695844",
+      "input": "John can run 10K in one hour while Tammy can run a marathon in three hours. John is faster.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9981999397277832
+    },
+    {
+      "id": "task116-74063650f97d431d9db671f072b3343d",
+      "input": "As the prices were soaring up, shoppers increased their purchase quantity.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9937410950660706
+    },
+    {
+      "id": "task116-9e47721aa022455eb457697f79f08321",
+      "input": "John knew Lisa was single, so it was ok for him to ask her on a date for Valentine's Day.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9990676045417786
+    },
+    {
+      "id": "task116-a0f00b475d9c4ca58e3b6fe382936a98",
+      "input": "Hoping to have a heart to heart with her friend over lunch, Lisa asked her to take a long lunch break instead of a short one.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9980267882347107
+    },
+    {
+      "id": "task116-9a873fd13673400d91fb590630b5c423",
+      "input": "Because he cannot push a cart, pushing a stroller should not be difficult.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.984874427318573
+    },
+    {
+      "id": "task116-5c19b0a0bdd24d6480fcdfe98d6eb2c3",
+      "input": "The sun shines brightly in the blue clear sky. You should stare at it directly.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997374415397644
+    },
+    {
+      "id": "task116-78db37117f814e1f8484ed7a7e412eec",
+      "input": "The car seats four people, so Jerry and his four friends can ride in it together.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9986114501953125
+    },
+    {
+      "id": "task116-c929d97c9c254245b1b965c1aaa85428",
+      "input": "The mother held hands with each of her twins as they crossed the street together.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9991563558578491
+    },
+    {
+      "id": "task116-42e840ed4fce439ba80281ac79fde30e",
+      "input": "Sarah had a small dinner at her house for her three best friends and set four place settings.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9958884119987488
+    },
+    {
+      "id": "task116-e3a70ea485974349a9a4181af9cb7c0d",
+      "input": "Peter invited his neighbor Jonathan for dinner, it's expected that Jonathan would arrive on time for dinner.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9157032370567322
+    },
+    {
+      "id": "task116-40f77dbecc3c42b6b6a9879b7d3aaf0f",
+      "input": "A son visiting his parents every 2 years is more likely to carry special gifts each time for them than a son who vist them every day.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9845408201217651
+    },
+    {
+      "id": "task116-eccb0433b9f6439894e8e65bc1b40813",
+      "input": "Anna married her high school sweetheart, and Jenna met her husband at work. Jenna probably met her spouse more recently.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9961460828781128
+    },
+    {
+      "id": "task116-3005ff77a4c9429d9bf9b8f45971f141",
+      "input": "If you stay 50 miles from the office, it is a good idea to walk to work every day.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9988823533058167
+    },
+    {
+      "id": "task116-477949b68ceb48b4b381bd229e14a41f",
+      "input": "Professional athletes can run more miles than casual runners in a 1 second running event.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9669662117958069
+    },
+    {
+      "id": "task116-2d8b4fc9eb5c469cb28ed75bdf8f8382",
+      "input": "Sally was the most wanted babysitter in her town so she was able to charge a bit more than average.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9992652535438538
+    },
+    {
+      "id": "task116-38698233982c417bb1694cac5cc12da7",
+      "input": "John travelled 2000 kilometers to another country by plane.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9417357444763184
+    },
+    {
+      "id": "task116-ce061eda9b45417a864f618f56acbebd",
+      "input": "If it is a day time and you want to read, you must turn on some light.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8991537094116211
+    },
+    {
+      "id": "task116-387072723776403d89b91058878bb4c9",
+      "input": "Since it is best to avoid people during a pandemic, Howard should sign up for a class with two hundred other people.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.646813690662384
+    },
+    {
+      "id": "task116-c6a7f1a36ba74f67a8e43f02aca63c5a",
+      "input": "Jane is a British fashion designer who loves input from exotic parts of the world. She's likely to be interested in fashion ideas from her neighbor.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9990757703781128
+    },
+    {
+      "id": "task116-a6637d7efd6e4d898ab53ebfe8c92e29",
+      "input": "A metal chair that is outside in the sun will feel cool on your skin if you sit on it.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9952400922775269
+    },
+    {
+      "id": "task116-e0c498e51a1942549d74546901842923",
+      "input": "Because Josh is a vegetarian, his mom can cook him a nice meal of homemade eggplant lasagna.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9985271692276001
+    },
+    {
+      "id": "task116-e5c403882fa64b10adec46e5e05124f7",
+      "input": "Being taller than Jeff, Jack could dunk more basketballs",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.915091872215271
+    },
+    {
+      "id": "task116-0ee494600c6d43d388dce7a659dac61b",
+      "input": "Lucy cheated his husband, she confessed to her husband and wowed to do it again and again.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8540329337120056
+    },
+    {
+      "id": "task116-4b028b7d1e994d53ae8a09b0d8964170",
+      "input": "Because she could lift the 20 lbs weight without a problem, we knew she could easily lift the 100 lb weight as well.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9853417873382568
+    },
+    {
+      "id": "task116-9cf166e31c484c14bb26a4988f72bd47",
+      "input": "The meal we ordered was cheaper than expected, so we ordered extra meal.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9704978466033936
+    },
+    {
+      "id": "task116-45630a62f2be4fc48d8b5734d696795b",
+      "input": "The two hour long movie starts at 5 pm, and so I will be able to meet my date at the pub at 6.30 in the evening as I intend to watch the whole movie.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9568569660186768
+    },
+    {
+      "id": "task116-5e3313de9f034903b6614ff1f57f2239",
+      "input": "My neighbours were delighted last night because I was playing loud music at 3 am.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9993031024932861
+    },
+    {
+      "id": "task116-bf26a9e8f2ae43518b893c67649c0461",
+      "input": "The meal we ordered was more expensive than expected, so we ordered extra meal.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5671478509902954
+    },
+    {
+      "id": "task116-a8fdc01b5e7e4bd396949d38eecedb0a",
+      "input": "If you constantly lift watermelons, you might get muscles.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9307970404624939
+    },
+    {
+      "id": "task116-73e1361d268a46cab110697aeb95a850",
+      "input": "Jamie wants to go to a whole-day party on Saturday, so she'll make sure to finish her project by Sunday at the latest.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.942488968372345
+    },
+    {
+      "id": "task116-560c771839d9422ca8ca960231b23ede",
+      "input": "If you are arriving at the office at 10 am today, you will be able to attend the 9 o'clock meeting in the morning.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9947867393493652
+    },
+    {
+      "id": "task116-e3a781fea03a499ea91b4e7811306286",
+      "input": "If you would like to become rich, it is important that you spend your time just thinking more than working hard.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9802992343902588
+    },
+    {
+      "id": "task116-8b4b1aa72eab4f2b93c0de5a2da53e67",
+      "input": "Since Jack has an appointment in 10 minutes, he will exercise now.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9920892715454102
+    },
+    {
+      "id": "task116-0fb26bc80cd94ace95e0a6776e7796da",
+      "input": "Now that it was summer, Joe was looking forward to skiing again.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9986231327056885
+    },
+    {
+      "id": "task116-aa34c55f77354a7dba50e298f94ef67d",
+      "input": "Cara was on a boat in the ocean when she noticed a shark approaching her from a distance, so she jump off the boat and swam as fast as possible to get away.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8051077723503113
+    },
+    {
+      "id": "task116-c776b4c0f5f54d01a37430f5dbe64e43",
+      "input": "30 year old scotch is usually better than 2 year old scotch",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9455409646034241
+    },
+    {
+      "id": "task116-e7e749d20cc3474a90ff681224edf15d",
+      "input": "I speak Spanish, while my friend doesn't, so on our trip to Venezuela, my friend will have an easier time talking to the locals.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9912756681442261
+    },
+    {
+      "id": "task116-0ef8bb5d4b4b4313806c8c4af0476231",
+      "input": "Jerry wanted to buy a computer for many years, he saved for it and bought it on his birthday.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8723401427268982
+    },
+    {
+      "id": "task116-81d302004864485684b8f424d35d6e1f",
+      "input": "Molly had thought it would take her six hours to move. She was happy when it took her three hours to move.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9995425939559937
+    },
+    {
+      "id": "task116-50b813e7abcc43868dbb54e5eb57d47f",
+      "input": "living next to a bar is so much louder than a library.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5404580235481262
+    },
+    {
+      "id": "task116-456de16a78c9430ebce2464bd620ef11",
+      "input": "living next to a bar is so much more peaceful than a library.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9966455101966858
+    },
+    {
+      "id": "task116-f0d9b9db719b4df38ef6e4d7bedb1e8f",
+      "input": "It is more fun to eat sewing needles than it is to eat chocolate.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9821740388870239
+    },
+    {
+      "id": "task116-a6f152fafd244326b7e82fb809bb08a1",
+      "input": "Hoping to have a good chance at winning first prize at the pie contest, Jane was delighted when she saw that there were thirty other competitors remaining.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.999054491519928
+    },
+    {
+      "id": "task116-abedf8352b404296992aa783e8ade3e3",
+      "input": "With all the rush hour traffic, it's best that John leaves for the airport on time rather than 30 minutes early.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9354106187820435
+    },
+    {
+      "id": "task116-b4d66d1513f0464db7cd464efb9ea762",
+      "input": "In the last 10 years, I have eaten all of my meals, done all of my shopping, and entertained myself all at home, while my friend goes out to eat, does all of his shopping, and gets all of his entertainment outside of his home, so I am likely to have written more Yelp reviews than my friend has.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9986648559570312
+    },
+    {
+      "id": "task116-09d06b11806f40f89e4ef59d8f48036b",
+      "input": "As the full taxi cab saw the people flag him down he sped past rather than slowed down.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5965713262557983
+    },
+    {
+      "id": "task116-d91ed9c926ff4fec855893ddc7f3b5bc",
+      "input": "It is recommended that students finish their homework first before watch the TV.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9749888181686401
+    },
+    {
+      "id": "task116-72f3a20f34b94b449a678df364ea5b51",
+      "input": "If it's cold outside, starting a fire will help warm you up.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9950705766677856
+    },
+    {
+      "id": "task116-b30b4a27d0604c3c831abb4f724ff180",
+      "input": "With all the rush hour traffic, it's best that John leaves for the airport 30 minutes early rather than just on time.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7704914808273315
+    },
+    {
+      "id": "task116-4fd26c5c4c1341fca52bb63e3b90f001",
+      "input": "Carla is married and Kelly is divorced so Carla is more likely to see her kids everyday.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7273135781288147
+    },
+    {
+      "id": "task116-639bdd36d60e4641aca43e2c9e0f892b",
+      "input": "In the middle of the day I like to draw the shades to keep the furniture nearby from fading.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9992228746414185
+    },
+    {
+      "id": "task116-75d4bed96b844fe7bfff0d71dd42b892",
+      "input": "Sarah chose the church over the local NGO to donate to as she is a religious person, and she doesn't expect her atheist sister to do the same.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9750150442123413
+    },
+    {
+      "id": "task116-48fb826d97064aaba74f425d0795a9ea",
+      "input": "As two skeins of yarn make one scarf, Jocelyn can make at least three of them with the three skeins she has.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.777690052986145
+    },
+    {
+      "id": "task116-7d4e0dca8559469e8b81c2f3775ddd40",
+      "input": " The immunity of a child of age 10 years is generally better than an adult of age 21 years.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9764484167098999
+    },
+    {
+      "id": "task116-8a62ba5d0049418e9f00cbdf074adaf6",
+      "input": "Driving is safer when the roads are covered in snow than when they are not.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8722952604293823
+    },
+    {
+      "id": "task116-85ee0300adf34b67a1adba31b0365ba1",
+      "input": "If a homeless person wins one million dollars, he will probably be happy.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9371402859687805
+    },
+    {
+      "id": "task116-a6873f0290434b27b726a9bb698ca5e9",
+      "input": "As she has to be at school in 5 minutes, she does not have time for a restroom break.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9053085446357727
+    },
+    {
+      "id": "task116-2569d5e36a574730b286fa0711e3fecf",
+      "input": "Jenna is five feet tall. Since she can just barely reach the apples growing on the tree, so can her sister who's five feet and six inches.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9588194489479065
+    },
+    {
+      "id": "task116-7b2356526d1c4d4da4eb3524bc5f3203",
+      "input": "A child with braces would never turn down an offer of chewy candy.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9994458556175232
+    },
+    {
+      "id": "task116-6e7976002f8e499bb704355b935defa3",
+      "input": "There were 3 heavy rocks that needed to be move, John was able to move all 3 at once.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9978184700012207
+    },
+    {
+      "id": "task116-f5037d7288154ab7b6ea4d8b85174766",
+      "input": "If you jump from tenth floor you will be unharmed.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9992281198501587
+    },
+    {
+      "id": "task116-14b24b35118f4e57b76cf8aee22e517d",
+      "input": "In the summertime in Canada, playing pond hockey is more popular than in the wintertime.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9947071671485901
+    },
+    {
+      "id": "task116-206318a0044245f2bda8864f84c3b729",
+      "input": "Ryan knew Martha was a dog lover, so he bought her high quality cat food.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9977995753288269
+    },
+    {
+      "id": "task116-cd7a1bec57234c799e0377c33e438721",
+      "input": "If you have a new shredder you should place it at eye level so you don't lean over the sharp machinery.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.991245687007904
+    },
+    {
+      "id": "task116-37a172cb7fb0489d8892833369c28924",
+      "input": "If I leave my cup of coffee sit on the counter for hours, it will get hot.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7311161160469055
+    },
+    {
+      "id": "task116-8a083ce7b021405993ddcac9056cd144",
+      "input": " Infrastructural facilities are more important than Medical facilities for the general health of the people.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9776824116706848
+    },
+    {
+      "id": "task116-d191f84247554aa0b7ac0d99ede248d6",
+      "input": "Sarah had a small dinner at her house for her three best friends and set fourteen place settings.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.994087815284729
+    },
+    {
+      "id": "task116-322d80252be240188cc9477fa10c506c",
+      "input": "A couple with six adult children is more likely than a couple with one adult child to have twelve grandkids.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9445153474807739
+    },
+    {
+      "id": "task116-3d4da013612a4cb4b0da53db305ed657",
+      "input": "Ted is a beginner runner, so he signed up for the 10K race on Saturday instead of the 5k.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5307486653327942
+    },
+    {
+      "id": "task116-57e2198350494b749e227c7d3cd76ed3",
+      "input": "It is more fun to eat chocolate than it is to eat sewing needles.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.990871012210846
+    },
+    {
+      "id": "task116-60b9bbe98618483685002082b7cf502e",
+      "input": "He works in a building only two blocks away from his house, so he doesn't have to drive there.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9882602691650391
+    },
+    {
+      "id": "task116-c500a8e549b547b6b236d2dc7fba0e58",
+      "input": "If a rock is placed on a piece of paper outside on a breezy day, the paper will not blow away.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9868069291114807
+    },
+    {
+      "id": "task116-7f449280f1ef4597b0f154997393c0b9",
+      "input": "Mary enjoys speed, so she prefers riding on a gyro-drop at the theme park.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9656387567520142
+    },
+    {
+      "id": "task116-9c73e012513442f5ab72626d9a050aef",
+      "input": "Anna married her high school sweetheart, and Jenna met her husband at work. Anna probably met her spouse more recently.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9968236684799194
+    },
+    {
+      "id": "task116-ce15f4ed9fb549f4b2cf0daa8d913c62",
+      "input": "The woman had twins, one of whom was born a day after the other.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9811088442802429
+    },
+    {
+      "id": "task116-58580a46a6a7485db42c2439d2e67251",
+      "input": "As she has to be at school in 6 hours, she does not have time for a restroom break.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.923664391040802
+    },
+    {
+      "id": "task116-fd3ed06f9cfc4bf9a2abddf8e0147b19",
+      "input": "I felt fortunate after taking 18 years to pay off all my student loans.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9964225888252258
+    },
+    {
+      "id": "task116-acf6b5a411bd4bd5bd31a15a941161c5",
+      "input": "Nicole is a track star while Yolanda is a receptionist. Nicole is much more likely than Yolanda to need to purchase new shoes often.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9845618605613708
+    },
+    {
+      "id": "task116-23662dbdb88d47c9b6dd697ace45a73d",
+      "input": "Hong Kong people are more excited to see snow than Beijing people.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9965846538543701
+    },
+    {
+      "id": "task116-3e68533be6e8469c80cfa963f4a96caf",
+      "input": "If a man is 5 foot, 2 inches, he can easily reach items that are high up.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9965927004814148
+    },
+    {
+      "id": "task116-aa4867c94d1f4e4a8a4940996ab73c53",
+      "input": "Since John was getting late for his office, he should eat his breakfast on the way to office.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9826818704605103
+    },
+    {
+      "id": "task116-0894767c7fea44ec96e5cb38cb19ff7a",
+      "input": "Eager to expand his social base, Tim was excited to find out that several of his friends were at the party.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9993917942047119
+    },
+    {
+      "id": "task116-904d594dae8648d1b687e13a65b323a0",
+      "input": "Because Josh is a vegetarian, his mom cooked him a nice meal of homemade meatloaf.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9987577199935913
+    },
+    {
+      "id": "task116-f9cf0984235a48f69e38b5154e636620",
+      "input": "A 2 year old boy is stronger than a 12 year old boy",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9985796213150024
+    },
+    {
+      "id": "task116-21ad974de476442296977625d143da05",
+      "input": "As she doesn't have a high budget for the celebration, Amy invited twenty friends over.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9962414503097534
+    },
+    {
+      "id": "task116-843c24396b17409fb221baf2e157cebc",
+      "input": "A pearl necklace can also be worn as a bracelet.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9468145966529846
+    },
+    {
+      "id": "task116-43ec42eef022470b8f22df62481531e6",
+      "input": "Gary is a landlord with many houses, so he is excited to have one house vacant at a time.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9943331480026245
+    },
+    {
+      "id": "task116-7b67102982644084a1554e619642d9e8",
+      "input": "Molly had thought it would take her three hours to move. She was happy when it took her six hours to move.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.999518871307373
+    },
+    {
+      "id": "task116-1d0617bb61554faa94d517e3eb990916",
+      "input": "You can catch a rock easier than a bird.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9860360622406006
+    },
+    {
+      "id": "task116-fd95cf57a03a4d9bab881f17cf124566",
+      "input": "The rowboat floated easily since it was made of lead",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9977433681488037
+    },
+    {
+      "id": "task116-451e49f0e4f64ce1b6f1719917497767",
+      "input": "It does not take 5 years for a car manufacturer to build a single vehicle.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8032904267311096
+    },
+    {
+      "id": "task116-0741f41fc6cc4b88b8fbab352de28275",
+      "input": "Tim and Mary have two kids: Peter at four and Samuel at fifteen, so they are more comfortable leaving Samuel at home.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9106767773628235
+    },
+    {
+      "id": "task116-4657f583a85840738033e6eacf932240",
+      "input": "Sue likes swimming but she gets overheated swimming in the warm Florida sea so she was happy to swim in a cold lake.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8980294466018677
+    },
+    {
+      "id": "task116-513542163f0642cdb540fffb0c92977f",
+      "input": "My brother needs a kidney transplant and a heart transplant, so I offered to donate my heart.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5554534196853638
+    },
+    {
+      "id": "task116-2f10a0641bd74007a5238133e5040502",
+      "input": "John was richer than Jack as his income was higher than that of Jack.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9984934329986572
+    },
+    {
+      "id": "task116-1b8e5ecee72c460ca22fa656c8b29bc9",
+      "input": "Maya usually gets 2,000 calories per day so three servings of 700 calorie meal are enough for her.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7024983167648315
+    },
+    {
+      "id": "task116-57def4c4018b43c88bbb7b95232a8e04",
+      "input": "The PC from 2010 that cost $3000 is likely more powerful than a New PC that cost $500.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9929384589195251
+    },
+    {
+      "id": "task116-5a3f8c4d6cb34cd9a9bea3f46bdec78a",
+      "input": "Ricki was delighted to see that 200 customers came to her opening night.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9998321533203125
+    },
+    {
+      "id": "task116-d84cb766a9e24d3d804fb73391d0f044",
+      "input": "Mary is a counselor, while Jennifer is a librarian; Jennifer is more likely to be able to recommend a good book than Mary.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6370725035667419
+    },
+    {
+      "id": "task116-0dcdfea8ace849dfb8ed483429f91a58",
+      "input": "John has one car. His car was totaled the night before. He still drives to work.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9006057977676392
+    },
+    {
+      "id": "task116-542b803bb53146198ed86d4263adff66",
+      "input": "Penny's children are more likely to get sick than Jenny's children because Jenny is an antivaxxer while Penny respects the immunization schedule.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9783721566200256
+    },
+    {
+      "id": "task116-70bf2b43acfc40d9a0fa0852757c8b8c",
+      "input": "You can walk more than 10 miles in a hour, if you keep a steady pace of 20 miles per hour.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9866389036178589
+    },
+    {
+      "id": "task116-5767e3a0ded44f889eff793b146c14be",
+      "input": "Since the whole college graduating classes were invited, ten bottles of wine were enough for the party.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9961715340614319
+    },
+    {
+      "id": "task116-fd529fd4719e469ea823e082e7a5eab1",
+      "input": "The waiter reserved a table for 10, so he was surprised when 10 guests showed up.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9937713742256165
+    },
+    {
+      "id": "task116-e24138154a624b369187b45c67fb1c32",
+      "input": "If you feel drowsy while working an office job, you should stand up while working for a few minutes.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9655026793479919
+    },
+    {
+      "id": "task116-a13324836de94194af2954f17ed527c6",
+      "input": "As two skeins of yarn make one scarf, Jocelyn can make at least three of them with the ten skeins she has.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7701429724693298
+    },
+    {
+      "id": "task116-16ec9938f0a84809a5f1a4735a7acc01",
+      "input": "A person born 8 years ago has not lived longer than a person born 80 months ago.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9656499624252319
+    },
+    {
+      "id": "task116-c178b353e3224d66a310d5b9c18f7836",
+      "input": "As she doesn't have a high budget for the celebration, Amy invited only two best friends over.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9666978120803833
+    },
+    {
+      "id": "task116-12a5b68d5bc24ca9bad31d03fb196d66",
+      "input": "I can visit three cities in a day, but not three continents.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7005000114440918
+    },
+    {
+      "id": "task116-07ed0b6433114ac1bf3693e625602e6a",
+      "input": "Since Ben has long hair and Carl has a buzz cut, it's more likely that Ben never has a bad hair day.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9977163076400757
+    },
+    {
+      "id": "task116-2ebbf7f7282a41cd9b49d7c2c6e8b61b",
+      "input": "If you would like to become rich, it is important that you spend your time working hard more than just thinking.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9892441034317017
+    },
+    {
+      "id": "task116-11f1769ff7da43a1845693a2152b1079",
+      "input": "Halloween is in a week so I will start to watch for sales on candy.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9968085885047913
+    },
+    {
+      "id": "task116-98c7c9d78f154d6689d4bd03458b2b21",
+      "input": "You can walk 10 miles in a hour, if you keep a steady pace of 5 miles per hour.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9757941961288452
+    },
+    {
+      "id": "task116-9d92ad2d3860486c9e0d160bd441fa56",
+      "input": "He was trying to reduce his daily calorific intake, and did well today, consuming only 2,000 Kcal.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.984373927116394
+    },
+    {
+      "id": "task116-856ce271cef646e785ee50dbb317a6a8",
+      "input": "Gavin went to the mall a few days before Christmas expecting a lot of people, but he was pleasantly surprised to see only thousands of people.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9902399778366089
+    },
+    {
+      "id": "task116-a70ea54c93f54e39950a003ad8fdafb5",
+      "input": "My sister and I both like tacos so much that we put as many toppings as we can on them.  Today my taco has two pounds of toppings!",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9980717301368713
+    },
+    {
+      "id": "task116-482a3e42dae844fda43cfd53e4548ecb",
+      "input": "Tim has two cars. One of his cars is acting up but he can still drive to work.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9379199743270874
+    },
+    {
+      "id": "task116-06d424f62a93405b82e2f689e54d1dd3",
+      "input": "When the girl didn't show up on their date, John realized he had a good change going in a relationship with her.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9888156652450562
+    },
+    {
+      "id": "task116-0075f753193a4a5c820a60a11c7c1e8e",
+      "input": "Ryan is a firefighter; he is more relevant at an explosion site than at a bank robbery.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9745392799377441
+    },
+    {
+      "id": "task116-76f399b7c9234498b73d5e45d6903305",
+      "input": "It's a good idea to have a roof for the hen house so that they wouldn't get wet when it rains.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9902538657188416
+    },
+    {
+      "id": "task116-4e9eeb56bf934094afee2b53d3e6d5cc",
+      "input": "Victor never brushed his teeth, so his teeth were very healthy.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9566942453384399
+    },
+    {
+      "id": "task116-ba6ba5b015ba429789fa63b2cc7292bd",
+      "input": "If you do not put off paying your bills on time, it is likely that your debts will increase.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6043267846107483
+    },
+    {
+      "id": "task116-c4ae35c87e99430eb808ca0fbeb033ba",
+      "input": "It is noon, so the sun is at its highest point in the sky",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9981063604354858
+    },
+    {
+      "id": "task116-ca053999029b494b9422fa8b6020c855",
+      "input": "Lily was busy with cooking when Jenny told her the skyline looks beautiful during sunset. When she finished cooking in an hour, she should still be able to see it.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9985450506210327
+    },
+    {
+      "id": "task116-351ba01dea1344849a7c3b36cf4fd88c",
+      "input": "A son visiting his parents every day is more likely to carry special gifts each time for them than a son who vist them every 2 years.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.970180869102478
+    },
+    {
+      "id": "task116-3a9749cce1914b13959085d9f07439bf",
+      "input": "A shirt bought yesterday is in much better shape than one bought fifty years ago.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9970381259918213
+    },
+    {
+      "id": "task116-dc19192872e1487e8bee9e358b5be02f",
+      "input": "If you watch a color movie on a black-and-white TV, you'll see the movie in color.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9915623068809509
+    },
+    {
+      "id": "task116-cae42b7908b04cd9b2ce92f15fb5a2c2",
+      "input": "Bill's grass is 2 feet tall, and Tom's grass is freshly cut. Both Bill and Tom ask John to borrow John's lawn mower. John thinks it makes sense to let Bill borrow the mower first.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.640636682510376
+    },
+    {
+      "id": "task116-464615b108e34a72abfba805531faf07",
+      "input": "Jill is rational, so I would believe what she tells me about the virus.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8271912932395935
+    },
+    {
+      "id": "task116-998f5fd863f045159bd223ff4bf1f072",
+      "input": "John is a bank teller and Ken is a diplomat. John probably travels abroad more often than Ken.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9659295082092285
+    },
+    {
+      "id": "task116-06d8700ee29045f3bce78b58cfc0138d",
+      "input": "Bill's grass is 2 feet tall, and Tom's grass is freshly cut. Both Bill and Tom ask John to borrow John's lawn mower. John thinks it makes sense to let Tom borrow the mower first.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6035441160202026
+    },
+    {
+      "id": "task116-3dacf05dfaf24e45abe6b359c3f8a24f",
+      "input": "David takes care of his three younger siblings so he spends a lot of time at his house.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5063457489013672
+    },
+    {
+      "id": "task116-f16a6b7ea31644ad9927facf71ca7650",
+      "input": "It's easy to clean 10 dishes when you have an hour.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9579246044158936
+    },
+    {
+      "id": "task116-63c98fcf63ae4048add8e3a1bba52f0e",
+      "input": "Mary prefers warm weather but Shelly loves the snow, so Mary is more likely to be found at the beach.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9834616184234619
+    },
+    {
+      "id": "task116-ff380190942d4291886818bdb92b5494",
+      "input": "Susan is coming over to Sally's baby shower so Sally is offering her diapers",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.509128749370575
+    },
+    {
+      "id": "task116-eee23a573d674354aa7fc3b744b14f19",
+      "input": "Hoping to have a heart to heart with her friend over lunch, Lisa asked her to take a short lunch break instead of a long one.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9973701238632202
+    },
+    {
+      "id": "task116-8897800ebf9640de872bfab462af122c",
+      "input": "Alex has been living in her apartment for 3 years, while Ruby has only lived there 3 months. Of the two, Ruby is more likely to be able to predict accurate electric costs for the coming months.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5995839238166809
+    },
+    {
+      "id": "task116-b81b5442d9eb436ea04303cf66e8dc3e",
+      "input": "A 12-year-old is more likely to feel happy because of some candies he/she gets than a 7-year-old.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9684837460517883
+    },
+    {
+      "id": "task116-83d451b7ab624d9aa6927011eb9ef0f4",
+      "input": "A couple had two daughters who are over 15 years old, so they got admission in Men higher secondary school.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9018179774284363
+    },
+    {
+      "id": "task116-13e87520cb714c64b5cff84ea4c42c6b",
+      "input": "Since it's the shortest day of the year, the sun should be visible for at least 18 hours.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8271065950393677
+    },
+    {
+      "id": "task116-719cee8ed5d74dfca490f2e8b471a9ee",
+      "input": "Joe's podcast is released around the same time as Adam's live radio. Kevin being a core fan of both is likely to go for Joe at that time",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.61786288022995
+    },
+    {
+      "id": "task116-83cc823af9b44bb3b497f417ec14b6fc",
+      "input": "In the wintertime in Canada, playing pond hockey is more popular than in the summertime.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9820609092712402
+    },
+    {
+      "id": "task116-f860ac2b99454518a453b78417ba1924",
+      "input": "His five-year-old daughter will start kindergarten in the fall.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9893858432769775
+    },
+    {
+      "id": "task116-131857381cd64f1593b125928a5776af",
+      "input": "My dad mows the lawn every week, and my mom gives me a pair of socks every Christmas. I'm likely to appreciate my mother more than my father.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997517466545105
+    },
+    {
+      "id": "task116-17bfcde96d474e7c93685a9c00d9380d",
+      "input": "If you constantly lift thimbles, you might get muscles.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7785419821739197
+    },
+    {
+      "id": "task116-87dd62b5cf3749fb8335c07140073c5d",
+      "input": "It's easy to clean 10 dishes when you have a minute.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9438530206680298
+    },
+    {
+      "id": "task116-5b73f372c7f34724b61f65e073283ad3",
+      "input": "I like to nap everyday so I have many chances to take an afternoon walk and still get my work done.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9797016382217407
+    },
+    {
+      "id": "task116-53b523c135644179a8ca61e098e9e764",
+      "input": "Since my new shoes turned out to be too tight, I should go a size up next time.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9884413480758667
+    },
+    {
+      "id": "task116-3fafc1248ddc4d0d858bbe92772da043",
+      "input": "Brittany and Michael have children in daycare. Michael works later in the evening. Therefore, Brittany is more likely to pick up the children from daycare.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9338666200637817
+    },
+    {
+      "id": "task116-c149ba55a4de4e798758705c66d68f95",
+      "input": "Heather's son Mike is six and her daughter Nellie is seventeen. Heather allows Nellie to drive home from school unsupervised but has Mike take the bus.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8053192496299744
+    },
+    {
+      "id": "task116-843b7ebeb4fa450d91ac193b75f87c03",
+      "input": "Tom loves to barbeque, while Tammy loves to bake, so it's more likely that Tom likes to cook inside, while Tammy likes to cook outside.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6204262375831604
+    },
+    {
+      "id": "task116-72b9b3ac9bbd4bfdb243033b9dc16b5e",
+      "input": "A 7-year-old is more likely to feel happy because of some candies he/she gets than a 12-year-old.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9644777774810791
+    },
+    {
+      "id": "task116-c809debcaabc4000bc5786e0aac000fc",
+      "input": "The woman had twins, one of whom was born a month after the other.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9598361253738403
+    },
+    {
+      "id": "task116-fb349fc498714e70b533614e09fe774d",
+      "input": "Jake planned to leave for work by 9 AM. He had a 30 minute drive and had to be there at 10 AM. He made it on time.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9899405837059021
+    },
+    {
+      "id": "task116-b1a49e21d550423ca38e9c7945ddf1f6",
+      "input": "Expecting to pay one hundred dollars for the dress, Susan was excited to purchase one with twenty percent off.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7298015356063843
+    },
+    {
+      "id": "task116-fe4c3bf59075435b92ca576cce4e0a1b",
+      "input": "With capacity brimming to the cusp, the already filled arena surely must allow an extra one hundred entrants.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9979050159454346
+    },
+    {
+      "id": "task116-fae16b124ad24b8c8913fed9edd2b348",
+      "input": "Sue called her mother and she wasn't home, so she won't have to leave a message.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9521099925041199
+    },
+    {
+      "id": "task116-64051fc05449466baff140ea79962708",
+      "input": "Now that it was winter, Joe was looking forward to skiing again.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9987016916275024
+    },
+    {
+      "id": "task116-48cedc69ce5a4a73bf48fcd644fb75bb",
+      "input": "Once it started raining, she was happy she brought her umbrella instead of her sunglasses.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9916754961013794
+    },
+    {
+      "id": "task116-ccad0053350d48b1a708461b9d4a76e7",
+      "input": "There are 839 people in a club with a maximum occupancy of 850, 20 more just arrived, and now we've exceeded the limit by 9 clubgoers.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7278023958206177
+    },
+    {
+      "id": "task116-f6b812fc85824269897fb2c795df43f0",
+      "input": "Susan visits houses to deliver pizza, while Jim visits to fix plumbing, so Susan is more likely to be invited in.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5599809885025024
+    },
+    {
+      "id": "task116-bf9e65dfb6fc4f31afa9606cd1e5e488",
+      "input": "Erica usually gets off work at 5 pm. She often sees the janitor that comes in for a night shift.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8851890563964844
+    },
+    {
+      "id": "task116-5a6df281fb0747d7a518fdba5c8b634b",
+      "input": "It stopped snowing three minutes ago, so the road conditions are   good.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9981690645217896
+    },
+    {
+      "id": "task116-636df575d1aa4a088b731195fad88aa2",
+      "input": "Because my natural hair color is black, if I dye my hair black, people will likely notice.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9718512296676636
+    },
+    {
+      "id": "task116-c511478cbbe14864b004588fa0b4d22c",
+      "input": "Jake planned to leave for work by 9 AM. He had a 30 minute drive and had to be there at 9:15 AM. He made it on time.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9883643388748169
+    },
+    {
+      "id": "task116-79e1aea7703741658973b5baa17a5250",
+      "input": "It stopped snowing three days ago, so the road conditions are good.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9986061453819275
+    },
+    {
+      "id": "task116-7cef0a40a30b46a0b317951ad7053974",
+      "input": "My friend loves underdogs, so she's more likely to cheer for the higher rather than lower ranked team.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9526569247245789
+    },
+    {
+      "id": "task116-df8241247c734d2eb2e699e1c5c2a69b",
+      "input": "Since it is best to avoid people during a pandemic, Howard should sign up for a class with seven other people.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5329501032829285
+    },
+    {
+      "id": "task116-e9834e0805854c30aae4d04bac09fcf6",
+      "input": "It is recommended that students watch the TV first before start their homework.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9593554735183716
+    },
+    {
+      "id": "task116-94406f9e5f8a4312af3397869a486258",
+      "input": "Since Ben has long hair and Carl has a buzz cut, it's more likely that Carl never has a bad hair day.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.997612714767456
+    },
+    {
+      "id": "task116-777a999fa2b74234a9c28dbba8f3e1fa",
+      "input": "Mary enjoys speed, so she prefers riding a carousel at the theme park.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9697371125221252
+    },
+    {
+      "id": "task116-f53ee2a31f304b7391485406db6a3641",
+      "input": "Nicole is a track star while Yolanda is a receptionist. Yolanda is much more likely than Nicole to need to purchase new shoes often.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9879046082496643
+    },
+    {
+      "id": "task116-0891f8b4909642b48253d2239b545508",
+      "input": "Gregory started working at the store when he was eighteen. In two months, he is in basic training.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9330341815948486
+    },
+    {
+      "id": "task116-7510be74fe1e4c84935be2dd305dce4c",
+      "input": "I speak Spanish, while my friend doesn't, so on our trip to Venezuela, I will have an easier time talking to the locals.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.893271267414093
+    },
+    {
+      "id": "task116-61f672dd0b0742aeaf50701a239d1cf9",
+      "input": "The mother held hands with each of her triplets as they crossed the street together.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9993588328361511
+    },
+    {
+      "id": "task116-9c443686367e40a98f64125296dffce8",
+      "input": "Phil added a salad to every meal and therefore he gained 2 pounds.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.682011604309082
+    },
+    {
+      "id": "task116-1c41c4b862034927a9bcd085527c327d",
+      "input": "The car seats four people, so Jerry and his three friends can ride in it together.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9985554814338684
+    },
+    {
+      "id": "task116-f6917012d26f47ffb6df691ee883cd49",
+      "input": "Amanda usually puts five hundred crackers in her bowl of soup so she can savor the soup's flavor.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9845303297042847
+    },
+    {
+      "id": "task116-33cbd33412b740918c681a388089ec39",
+      "input": "It is a general trend for people to save more during festival seasons than other times.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8816818594932556
+    },
+    {
+      "id": "task116-3923158e8f7d4a18ac7e3c8d6ef68ba0",
+      "input": "Once it started raining, she was happy she brought her sunglasses instead of her umbrella.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9951163530349731
+    },
+    {
+      "id": "task116-56e00fab9d2a460c8c2d107c109e7b4b",
+      "input": "Since Jack has an appointment in 10 minutes, he will exercise after it is finished.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9371762871742249
+    },
+    {
+      "id": "task116-d7a8ece7ad254b518f8698735dc3fcbf",
+      "input": "Ricki was delighted to see that 2 customers came to her opening night.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997932314872742
+    },
+    {
+      "id": "task116-8adeba3845da4b26ba2a0529aba3413a",
+      "input": "There were 3 heavy rocks that needed to be move, John was able to move all 3 at once with help.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9980605244636536
+    },
+    {
+      "id": "task116-e435c7707105466ab1e823ad8543517c",
+      "input": "A football player will not have more difficulty throwing a football with two broken arms than with no broken arms.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9815096855163574
+    },
+    {
+      "id": "task116-bbbf5f567085427590d8afc05f5a1a17",
+      "input": "Having invited twenty guests over for dinner, he would be overwhelmed if they all brought a plus one.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9830933809280396
+    },
+    {
+      "id": "task116-e7b05004d7864e1d82b47643dad782e2",
+      "input": "Jenny's children are more likely to get sick than Penny's children because Jenny is an antivaxxer while Penny respects the immunization schedule.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9699521660804749
+    },
+    {
+      "id": "task116-35c251eb380440a6b92bc666f6186aef",
+      "input": "Since it's the longest day of the year, the sun should be visible for at least 12 hours.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8448419570922852
+    },
+    {
+      "id": "task116-6cb5105d15804d0ea6e3ec12c55de31d",
+      "input": "Marth's child is very athletic, he can run up to 10 miles at once.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9991335272789001
+    },
+    {
+      "id": "task116-c4cdcbda5e3b456e941213d6e3d49154",
+      "input": "Because she could lift the 20 lbs weight without a problem, we knew she could easily lift the 10 lb weight as well.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9795412421226501
+    },
+    {
+      "id": "task116-aac5e68fe68547a2a6e9b4695a93155d",
+      "input": "Since he'd be driving in the middle of the day, John was sure to take his sunglasses.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.989629328250885
+    },
+    {
+      "id": "task116-66816a8bf66f4273a901b51a3fa5b303",
+      "input": "As he can lift an air conditioner, he should be able to lift a baby.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6785590052604675
+    },
+    {
+      "id": "task116-680efea94d9c4fac8ae5810b95eba672",
+      "input": "As looting and robbery have increased recently, shop establishments have increased their security.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.987441897392273
+    },
+    {
+      "id": "task116-5ed538cd89ba4b6c83eec4002fe38da5",
+      "input": "Jenna is five feet tall. Since she can just barely reach the apples growing on the tree, so can her sister who's four feet and six inches.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.955690860748291
+    },
+    {
+      "id": "task116-5c2c002cb70346399fd0fc0446950d4f",
+      "input": "As the temperature has increased considerably during the last few days, sale of woolen clothes has increased.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.98589688539505
+    },
+    {
+      "id": "task116-ae424c702740449faf0b1592d6672492",
+      "input": "Penny reached office early at 9 am to organize the 9:30 am meeting.",
+      "output": [
+        "True"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9876044988632202
+    },
+    {
+      "id": "task116-12b5ba5d376a489b964df2220f51d72d",
+      "input": "Millie is an artist while Bobby is a teacher and Bobby is more likely to win the art competition.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.973663866519928
+    },
+    {
+      "id": "task116-a6c1576fa15d446d93ef573d37d9969d",
+      "input": "Laura is likely to help Karen with her extra work since Karen is not grateful.",
+      "output": [
+        "False"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.76947021484375
+    }
+  ]
+}

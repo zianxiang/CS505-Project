@@ -1,0 +1,2771 @@
+{
+  "Contributors": [
+    "Amirreza Mirzaei"
+  ],
+  "Source": [
+    "copa"
+  ],
+  "URL": [
+    "https://people.ict.usc.edu/~gordon/copa.html"
+  ],
+  "Categories": [
+    "Cause Effect Classification"
+  ],
+  "Reasoning": [
+    "Commonsense Reasoning"
+  ],
+  "Definition": [
+    "In this task your given two statements. You must judge whether the second sentence is the cause or effect of the first one. Label the instances as \"cause\" or \"effect\" based on your judgment. The sentences are separated by a newline character."
+  ],
+  "Input_language": [
+    "English"
+  ],
+  "Output_language": [
+    "English"
+  ],
+  "Instruction_language": [
+    "English"
+  ],
+  "Domains": [
+    "Narrative"
+  ],
+  "Positive Examples": [
+    {
+      "input": "The women met for coffee.\nThey wanted to catch up with each other.",
+      "output": "cause",
+      "explanation": "The women met for coffee because they wanted to catch up with each other."
+    },
+    {
+      "input": "The physician misdiagnosed the patient.\nThe patient filed a malpractice lawsuit against the physician.",
+      "output": "effect",
+      "explanation": "The patience filed a lawsuit against the physician is the effect of the physician misdiagnosing him/her."
+    },
+    {
+      "input": "The guests of the party hid behind the couch.\nIt was a surprise party.",
+      "output": "cause",
+      "explanation": "The guests hid behind the couch because it was a surprise party."
+    },
+    {
+      "input": "My friend was recovering from surgery.\nI brought her a card and flowers.",
+      "output": "effect",
+      "explanation": ""
+    }
+  ],
+  "Negative Examples": [
+    {
+      "input": "My body cast a shadow over the grass.\nThe sun was rising.",
+      "output": "effect",
+      "explanation": "The rising of the sun isn't an effect of casting a shadow over the grass."
+    },
+    {
+      "input": "I took antibiotics.\nMy infection cleared up.",
+      "output": "cause",
+      "explanation": "clearing up infection is the effect of taking antibiotics and it can't be the reason of that. So, the output should be effect."
+    }
+  ],
+  "Instance License": [
+    "BSD 2-Clause"
+  ],
+  "Instances": [
+    {
+      "id": "task828-3b754d5943c74144b06f1f56bc7efb40",
+      "input": "Several witnesses of the crime testified against the suspect.\nThe suspect was convicted.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8718970417976379
+    },
+    {
+      "id": "task828-50ed48e04e7a41eb942e65803c6536b0",
+      "input": "I turned the page on the calendar.\nIt was the beginning of a new month.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6877188682556152
+    },
+    {
+      "id": "task828-30041bb9f36045a7b895d2d283a402b3",
+      "input": "The man held similar beliefs to those of his parents.\nHis parents influenced him.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9939279556274414
+    },
+    {
+      "id": "task828-af83dfece8004e7cb75c903c13c7b510",
+      "input": "I knocked on my neighbor's door.\nMy neighbor invited me in.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9986781477928162
+    },
+    {
+      "id": "task828-b7a505bff3ee4b61a784b7cd6669527c",
+      "input": "The woman dyed her hair.\nShe wanted a new look.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7774862051010132
+    },
+    {
+      "id": "task828-be0b59723e4a4e7595c3caccb0760fe7",
+      "input": "The girl wanted to thank her math teacher.\nThe girl brought the teacher an apple.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9995212554931641
+    },
+    {
+      "id": "task828-d26822b44e384097b7211fec87d7f8d9",
+      "input": "My office door was open.\nI overheard the conversation in the hall.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9751185178756714
+    },
+    {
+      "id": "task828-9fa8f830026d4133b34d5f32d4577aae",
+      "input": "The girl politely declined the hamburger.\nShe was a vegetarian.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9881078600883484
+    },
+    {
+      "id": "task828-09cff0674e18436cb67a173adb2b356b",
+      "input": "The city re-elected the mayor.\nThe mayor fulfilled his promises.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997501969337463
+    },
+    {
+      "id": "task828-c7fd0c3beb4d4251b36a2d1f7d1d7e42",
+      "input": "The nation endured a natural disaster.\nLeaders of other countries sent emergency relief.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8793535232543945
+    },
+    {
+      "id": "task828-080ee06d04cf4376a72c2521972571f9",
+      "input": "The employee's shift ended.\nHe went home for the day.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9402792453765869
+    },
+    {
+      "id": "task828-0c3ccc43f93845cd900f37ce59b7ce36",
+      "input": "The girl wanted to wear earrings.\nShe got her ears pierced.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7004866003990173
+    },
+    {
+      "id": "task828-55436f7d798f449e851e8310266886a5",
+      "input": "The cup of tea was scalding hot.\nI blew on it.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9492577910423279
+    },
+    {
+      "id": "task828-3af4db2ba5cf40c788e8335d94e0bcee",
+      "input": "A baby chicken emerged from the egg.\nThe egg hatched.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9541091918945312
+    },
+    {
+      "id": "task828-f39ba2d4e2044b5a80877e713243d39a",
+      "input": "The circus performer juggled while riding a unicycle.\nThe audience cheered in astonishment.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9984003901481628
+    },
+    {
+      "id": "task828-a2b7549ff0084a5a9290de7659332aef",
+      "input": "The man survived the deadly illness.\nHe received an organ transplant.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6863195896148682
+    },
+    {
+      "id": "task828-5ed3d0b478ca4c6a86566ad115683893",
+      "input": "The surfers returned to the beach.\nThey saw a shark.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.963611900806427
+    },
+    {
+      "id": "task828-61df6c89dc204ac7bacbcd4772b91cde",
+      "input": "Sunlight entered the room.\nI opened the curtains.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9989425539970398
+    },
+    {
+      "id": "task828-d26764d4e83344489f04c645e72c44a8",
+      "input": "The pilot's radar detected a storm.\nThe pilot navigated away from the storm.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9796299934387207
+    },
+    {
+      "id": "task828-ec72698bec3e4116ba41e8d58a62ce18",
+      "input": "The band played their hit song.\nThe audience clapped along to the music.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997064471244812
+    },
+    {
+      "id": "task828-f81b86d73ceb42d882600c92b2bf90d0",
+      "input": "The bag of popcorn began to pop.\nI heated it in the microwave.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7728136777877808
+    },
+    {
+      "id": "task828-c1263f2266b04f65be882dce1b142bba",
+      "input": "The woman presented her brother with a gift.\nHer brother unwrapped the gift.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.99874347448349
+    },
+    {
+      "id": "task828-25975799542948c08aab0cd1ed94488b",
+      "input": "The fans in the stadium cheered.\nThe player scored.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9998346567153931
+    },
+    {
+      "id": "task828-4d0ea0039872419c92845986de8e8d55",
+      "input": "I apologized to my friend.\nMy friend forgave me.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9871396422386169
+    },
+    {
+      "id": "task828-4f1fb4bc04fd41b58a322e7a8a69bc39",
+      "input": "The man caught his reflection.\nHe stood over the calm lake.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9898096323013306
+    },
+    {
+      "id": "task828-ec2e4d41d9574b65a159ab16743dd395",
+      "input": "The sun emerged from the clouds.\nThe woman took her sweater off.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8784858584403992
+    },
+    {
+      "id": "task828-f410c7d5183340da9dd14f7e09152997",
+      "input": "I looked forward to the weekend.\nI planned to attend my friend's wedding.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9996778964996338
+    },
+    {
+      "id": "task828-4b70b02e9a06466b9b87f4d4216ad9c5",
+      "input": "The car stopped at the crosswalk.\nThe pedestrian crossed the road.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9961429238319397
+    },
+    {
+      "id": "task828-e51d1f536d10434e97cd161d497e68ac",
+      "input": "The man won the lottery.\nHe became rich.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.999666690826416
+    },
+    {
+      "id": "task828-9b8737b33a6b43cca770129d50e09e17",
+      "input": "The girl landed in the pool.\nShe jumped off the diving board.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9031392335891724
+    },
+    {
+      "id": "task828-3b6c78e6df1f48109aae59706759320b",
+      "input": "The woman felt reluctant to switch careers.\nShe made a lot of money in her current occupation.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9934206604957581
+    },
+    {
+      "id": "task828-eae8709cf3a54b0882c62bd3800177e9",
+      "input": "The girl went down the hill on her bike.\nHer bike sped up.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9923270344734192
+    },
+    {
+      "id": "task828-62ed555d14fe48a5973f1052e356dfc1",
+      "input": "The dog eyed the juicy steak on the table.\nIt drooled.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9946815371513367
+    },
+    {
+      "id": "task828-c9cda7c893704da7ba804b33c06a4d3b",
+      "input": "The puppy stayed near its owner.\nThe owner kept the puppy on a leash.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6281698346138
+    },
+    {
+      "id": "task828-065ba982ee84461284cc197ec6f0cc17",
+      "input": "The teacher commended the student.\nThe student answered the question correctly.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997215867042542
+    },
+    {
+      "id": "task828-b714e263bae84cf7869e1eae5e8de4f0",
+      "input": "The man had lipstick on his cheek.\nThe woman kissed him.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9980734586715698
+    },
+    {
+      "id": "task828-9e804104ba7d451e814265470df49b2b",
+      "input": "The warring countries wanted peace.\nThey negotiated a treaty.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8535144329071045
+    },
+    {
+      "id": "task828-d1e28a278a9e4a1aa24d6ef2a4a5f771",
+      "input": "The girl found the missing puzzle piece.\nShe completed the puzzle.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9851025342941284
+    },
+    {
+      "id": "task828-ae255b1a245a438a836b4d20a9c7b98f",
+      "input": "My facial expression lit up.\nI received good news.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9998513460159302
+    },
+    {
+      "id": "task828-0fdbd1216dec4d95beb3a92337469b83",
+      "input": "I received a package in the mail.\nThe package triggered my curiosity.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9950708150863647
+    },
+    {
+      "id": "task828-384d45d431df4c0aae4eb051898b4f47",
+      "input": "The gambler was confident.\nHe bet all of his money.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997504353523254
+    },
+    {
+      "id": "task828-c5fee595d8cd485d964c0d7f1cea3c0a",
+      "input": "My body cast a shadow over the grass.\nThe sun was rising.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9983532428741455
+    },
+    {
+      "id": "task828-efb6fd81750c4d8e92001e40b4a97676",
+      "input": "The elderly woman suffered a stroke.\nThe woman's daughter moved in to take care of her.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9624722599983215
+    },
+    {
+      "id": "task828-2cf33d4dcf2a44f896db3dad082568bd",
+      "input": "I poured water on my sleeping friend.\nMy friend awoke.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9837014079093933
+    },
+    {
+      "id": "task828-206959684d8745bb9616f58ce4032bf3",
+      "input": "It got dark outside.\nThe moon became visible in the sky.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9898399114608765
+    },
+    {
+      "id": "task828-3e7934e599ec4b0ca49bedf43427ac7f",
+      "input": "The girl received a trophy.\nShe won a spelling bee.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9989134073257446
+    },
+    {
+      "id": "task828-e135f1d22c954f7e88382315e92893cc",
+      "input": "The woman's date wanted to look like a gentleman.\nHe opened the door for her.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9979628324508667
+    },
+    {
+      "id": "task828-3f22364e1f0a4cf590fbb24667caba3b",
+      "input": "The woman gave the man her phone number.\nShe was attracted to him.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9978081583976746
+    },
+    {
+      "id": "task828-5e460052cb444c5c8d1fcaee138cd0ef",
+      "input": "The skydiver glided safely to the ground.\nShe opened her parachute.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.999542236328125
+    },
+    {
+      "id": "task828-c356a6e08e6944169583362a2b6df610",
+      "input": "The child became immune to the disease.\nHe received the vaccine for the disease.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9547327160835266
+    },
+    {
+      "id": "task828-e73fb9190c044e7eb60f7b665271c3f1",
+      "input": "The woman hummed to herself.\nShe was in a good mood.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.999863862991333
+    },
+    {
+      "id": "task828-6944b84ca69f473f9113cffbc847fea6",
+      "input": "The woman won the lottery.\nShe bought a yacht.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9949023723602295
+    },
+    {
+      "id": "task828-0f0cc34d9a6d49b0adc09c90d0b2cda0",
+      "input": "My favorite song came on the radio.\nI sang along to it.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9543542861938477
+    },
+    {
+      "id": "task828-7bfcdebf7a6b4ea1856f840e1e9094a4",
+      "input": "The girl made a wish.\nShe saw a shooting star.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9944061040878296
+    },
+    {
+      "id": "task828-4658dfc2156c4fcc8efb3eb2db375f0e",
+      "input": "The cook stirred the ingredients in the bowl.\nThe ingredients blended together.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997469782829285
+    },
+    {
+      "id": "task828-79d416ee3f7e4d49b804d56bb9ef9b6d",
+      "input": "The man signed the document.\nThe transaction became official.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9992170333862305
+    },
+    {
+      "id": "task828-6aded9dadfcd4757a1163e5064a888bb",
+      "input": "The woman felt compelled to help someone in need.\nShe donated blood.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9948136806488037
+    },
+    {
+      "id": "task828-ccbfce48424847d6ba870be49117205f",
+      "input": "I rubbed sandpaper on the wood.\nThe wood became smooth.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9954299926757812
+    },
+    {
+      "id": "task828-02608819a4cb48dea9c15f96dec3c8ed",
+      "input": "The crowd gave the band a standing ovation.\nThe band reappeared on the stage.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.999382734298706
+    },
+    {
+      "id": "task828-c31985d7d7ac46119ec6dbcd9d7d14e1",
+      "input": "The boaters set off a flare.\nTheir boat was rescued.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9369993805885315
+    },
+    {
+      "id": "task828-d26f20b946cf4cefaa489da391b103d5",
+      "input": "The man removed his coat.\nHe entered the house.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9964261651039124
+    },
+    {
+      "id": "task828-d640b63dc34b46099376317c185e2267",
+      "input": "The woman dangled the biscuit above the dog.\nThe dog jumped up.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9838398098945618
+    },
+    {
+      "id": "task828-00dfc36a7f3b4ff18ccc09b8836a6e57",
+      "input": "I learned how to play the board game.\nMy friend explained the rules to me.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9983049631118774
+    },
+    {
+      "id": "task828-fb9dbab397054f8a8aea67a1c88a9a10",
+      "input": "The man went away for the weekend.\nHe wanted to relax.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.822483479976654
+    },
+    {
+      "id": "task828-a9c081ed30264e6fb0bbeaf5bfa42b93",
+      "input": "The terrorist set off the bomb.\nThe bomb exploded.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9703627228736877
+    },
+    {
+      "id": "task828-3ea741fdd6e74871bdb5e78047ac1129",
+      "input": "The man closed the umbrella.\nHe approached the building.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.962653636932373
+    },
+    {
+      "id": "task828-1626a5bca09a445482b2ad4192ecbd9d",
+      "input": "The fugitive hid from the police.\nThe fugitive remained at large.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8525282740592957
+    },
+    {
+      "id": "task828-9ef989a1811840a8b2e5b7da3c7c68b1",
+      "input": "I tipped the bottle.\nThe liquid in the bottle poured out.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9948392510414124
+    },
+    {
+      "id": "task828-befe0b2b411e417d99caa85574357e0e",
+      "input": "The photographer got the child to smile.\nThe photographer quickly snapped the child's photo.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9917978048324585
+    },
+    {
+      "id": "task828-3a1fb0bc950b4a11800fb0b661bdc3a4",
+      "input": "The woman took her family on vacation.\nShe received a salary bonus.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9467528462409973
+    },
+    {
+      "id": "task828-9348ccbc976e486f82927ca7f039ec4f",
+      "input": "The woman sensed a pleasant smell.\nShe was reminded of her childhood.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9996192455291748
+    },
+    {
+      "id": "task828-386fe7bfd9b348a3be623467c34425ba",
+      "input": "I pushed the pendulum.\nIt swung back and forth.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9931955337524414
+    },
+    {
+      "id": "task828-e11d30921092465680348244b1454e2a",
+      "input": "The surfer caught the wave.\nThe wave carried her to the shore.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.999243974685669
+    },
+    {
+      "id": "task828-5c5c099d35a9490082e54af65148b513",
+      "input": "The speaker disarmed her debate opponent.\nThe speaker won the debate.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9996178150177002
+    },
+    {
+      "id": "task828-5d2881692e4a4ce2a2ad2b40743abac5",
+      "input": "The man contemplated the painting.\nHe felt in awe.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9990372657775879
+    },
+    {
+      "id": "task828-67bca24e8fad49ff9ca40c181ee1552c",
+      "input": "The turtle hid in its shell.\nIt detected a predator.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.537352442741394
+    },
+    {
+      "id": "task828-9ec72250b5c640f0a144a94e3a275535",
+      "input": "The girl handed down her clothes to her younger sister.\nShe outgrew the clothes.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9562793970108032
+    },
+    {
+      "id": "task828-46eaf1a4b48646b5ab3564de40f7cf24",
+      "input": "The parents left their children with a babysitter.\nThey made plans to celebrate their anniversary.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.998043417930603
+    },
+    {
+      "id": "task828-972eb14d793443a3966464d767efdb25",
+      "input": "The product was heavily advertised.\nConsumers recognized the product.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9958393573760986
+    },
+    {
+      "id": "task828-d56c765da4a0478b8523131f2edf811d",
+      "input": "The group overlooked the woman's faux pas.\nThe woman was relieved.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9504333138465881
+    },
+    {
+      "id": "task828-3f4d42ab6bff4785ae3bb45109219eae",
+      "input": "I wrote a thank-you note to my grandmother.\nShe sent me a gift.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997864365577698
+    },
+    {
+      "id": "task828-a6e2c19e6a7c49b49635eb7a3bc820c5",
+      "input": "I held the door for the woman entering behind me.\nThe woman thanked me.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9994433522224426
+    },
+    {
+      "id": "task828-53a7ff5a50954d8e817eb9f2905c5918",
+      "input": "The security guard tackled the man.\nThe man displayed a weapon.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9698440432548523
+    },
+    {
+      "id": "task828-52770fd44a0f4cbfacbae5e2645235f0",
+      "input": "The driver rotated the steering wheel.\nThe car turned.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.995334804058075
+    },
+    {
+      "id": "task828-b750b891d4714314826b605b5dcf2460",
+      "input": "The hospital sent the patient home.\nThe patient's symptoms cleared up.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9769250154495239
+    },
+    {
+      "id": "task828-08eccb47742346ec836b35e5372f2d06",
+      "input": "The child caught a life-threatening illness.\nShe didn't get vaccinated.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6537413597106934
+    },
+    {
+      "id": "task828-315a41838fa04f0c83e3f641ada6ea0a",
+      "input": "The parents recognized their daughter's creativity.\nThey encouraged her to become an artist.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9996930360794067
+    },
+    {
+      "id": "task828-129cbc9d0c27431282f461ea54d3ac60",
+      "input": "The woman received a diploma.\nShe graduated from college.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9864286780357361
+    },
+    {
+      "id": "task828-ce15d53229594a529c138b2e2f8ad96f",
+      "input": "The woman covered her ears.\nThe fire alarm blared.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5397903323173523
+    },
+    {
+      "id": "task828-2635e5858235401caf3128ef6db79258",
+      "input": "The archeologist dug up the site.\nShe excavated ancient artifacts.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.994413435459137
+    },
+    {
+      "id": "task828-a41e9c9ad7804e198e532fcf9d66397b",
+      "input": "The coach gave his player a high five.\nThe player scored a point.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.999518632888794
+    },
+    {
+      "id": "task828-9e9276a291ba4711b9f64b3ee1991c9a",
+      "input": "My breath smelled of garlic.\nI brushed my teeth.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9213559627532959
+    },
+    {
+      "id": "task828-9e2557df746d434db44b5f4fb6f93218",
+      "input": "I pushed the gas pedal.\nThe car accelerated.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.998323380947113
+    },
+    {
+      "id": "task828-345c773d0350485cbe2e0538c624cfd8",
+      "input": "The motorcyclist twisted the throttle.\nThe motorcycle shot forward.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9909791946411133
+    },
+    {
+      "id": "task828-17f4201ccf9b441b886483c05c6f038b",
+      "input": "The host served dinner to his guests.\nHis guests were gracious.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997196793556213
+    },
+    {
+      "id": "task828-c6e97faeec3c46daa8a0439615134b1d",
+      "input": "The man held his breath.\nHe went underwater.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9755116701126099
+    },
+    {
+      "id": "task828-28806a714afe4bbfa65c3b0d3ebdb107",
+      "input": "I planted the seeds in the soil.\nThe seeds sprouted.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9977564215660095
+    },
+    {
+      "id": "task828-b4d408778a24495fb27a9cb344814fd1",
+      "input": "The girl performed in a dance recital.\nHer parents came to watch the recital.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9982348680496216
+    },
+    {
+      "id": "task828-ab88a1e7df6f4257b5eb9926da4386db",
+      "input": "The baby was wailing in his crib.\nThe mother picked up the baby.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.99327152967453
+    },
+    {
+      "id": "task828-ec755f942f40466690b4b866702933f3",
+      "input": "The woman had a religious awakening.\nShe began going to church.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9581144452095032
+    },
+    {
+      "id": "task828-3ac77ed406654d1e8780174e26f63c5d",
+      "input": "The student flaunted his test grade to his classmates.\nHe received a perfect score.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.995832622051239
+    },
+    {
+      "id": "task828-644222de588c4619813ed8b101e64a3c",
+      "input": "The rocket flew up into the sky.\nThe girl launched it.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9993457198143005
+    },
+    {
+      "id": "task828-9fdc0fba5ca147f9a10da418630425f3",
+      "input": "The boy murmured his reply to his mother.\nHis mother told him to speak up.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9974297881126404
+    },
+    {
+      "id": "task828-c257542a4a244af28ba9a7cd74e4d5e8",
+      "input": "The woman felt an electric shock.\nShe grabbed the doorknob.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9608598351478577
+    },
+    {
+      "id": "task828-eabb606170f241949b43cb442b045833",
+      "input": "The climbers reached the peak of the mountain.\nThey congratulated each other.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9998241066932678
+    },
+    {
+      "id": "task828-c1ca148230b942d2ac66ec4a8d86aea4",
+      "input": "The fortune teller's revelations were convincing.\nShe received many returning customers.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9998231530189514
+    },
+    {
+      "id": "task828-8c76b139c24f45e8bd42e1fdc3c16042",
+      "input": "The company's profits started to level off.\nIt increased its marketing efforts for new products.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9684370756149292
+    },
+    {
+      "id": "task828-47f2fcd420e8474790691f66f6203d26",
+      "input": "The detective flashed his badge to the police officer.\nThe police officer let the detective enter the crime scene.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8388411998748779
+    },
+    {
+      "id": "task828-43b0ea9febf34991917934b9dd6cb3ef",
+      "input": "The girl wanted to make her mother happy.\nThe girl picked a flower for her mother.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.998054027557373
+    },
+    {
+      "id": "task828-b630365ec4e64c26ad6dbdffccf10bea",
+      "input": "The girl pushed herself off the top of the slide.\nShe glided down the slide.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9884802103042603
+    },
+    {
+      "id": "task828-29873f89f2c54f6d954cba8a8365b413",
+      "input": "My jaw dropped open.\nI was shocked.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9940094947814941
+    },
+    {
+      "id": "task828-80032f21730944d08f869259fe37178f",
+      "input": "I burst into a fit of laughter.\nMy eyes welled up with tears.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9995729327201843
+    },
+    {
+      "id": "task828-745ad58b1cbc46fa95cf9b7f20de91ff",
+      "input": "The balloon expanded.\nI blew into it.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9963623881340027
+    },
+    {
+      "id": "task828-4995e6a35cde4c1e9a221d56d2cedc2d",
+      "input": "I put coins in the washing machine at the laundromat.\nThe machine powered on.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.980028510093689
+    },
+    {
+      "id": "task828-0d5a99bb3e5844019f657151c105fa16",
+      "input": "The woman pressed down on the piano key.\nA sound played.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9977124929428101
+    },
+    {
+      "id": "task828-fb6e38ff4b754006a0ae441000334a55",
+      "input": "The girl met her favorite actor.\nShe asked him for his autograph.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9846346974372864
+    },
+    {
+      "id": "task828-9e075b381c094f1c915c44914014f092",
+      "input": "The cat purred.\nI petted it.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9954525828361511
+    },
+    {
+      "id": "task828-9a878dfefc8e4aca9e968ee40ac9992a",
+      "input": "The man revealed personal information to the therapist.\nHe trusted the therapist.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9944856762886047
+    },
+    {
+      "id": "task828-c7bbabd446c34b01b709cf0543772095",
+      "input": "I approached the man.\nHe looked familiar.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9920076131820679
+    },
+    {
+      "id": "task828-196aa4f58c0648d9951aa6b7ee6f8f84",
+      "input": "The leader received praise.\nHe fought poverty.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.997391939163208
+    },
+    {
+      "id": "task828-4beba50674f84bb88146772e4dec4037",
+      "input": "The man read the cartoon in the newspaper.\nHe chuckled.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9976109266281128
+    },
+    {
+      "id": "task828-a6b2960a9b8e411fab1014cec91bfeb1",
+      "input": "The bananas ripened.\nWe ate them.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9951667785644531
+    },
+    {
+      "id": "task828-602a255343214066a026422b83319ced",
+      "input": "The man took notice of the woman.\nHe caught a whiff of her perfume.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.998884379863739
+    },
+    {
+      "id": "task828-ef5bded751f54b0eaa37d08f20955992",
+      "input": "The boy painted a picture for his mother.\nHis mother hung the picture on the wall.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7426703572273254
+    },
+    {
+      "id": "task828-25881971d33941eb9d5cef90069bd5a9",
+      "input": "The competition ended.\nThe teams shook hands.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9992098808288574
+    },
+    {
+      "id": "task828-d2f4dd29b7894b4ebd860e2092befe76",
+      "input": "The documents contained important information.\nI kept them in a secure place.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9960935711860657
+    },
+    {
+      "id": "task828-9a4c9a52ea2247eb8b60582dab6fa303",
+      "input": "The book became a huge bestseller.\nIt was adapted into a movie.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9795841574668884
+    },
+    {
+      "id": "task828-addb275c79564740bade5672d780bc72",
+      "input": "The man felt thankful to be alive.\nHe was cured of cancer.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9972621202468872
+    },
+    {
+      "id": "task828-d0ccbb652fad4f9282a2559ee06cfa3d",
+      "input": "The woman refused a second beer.\nShe was the designated driver for the night.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6166845560073853
+    },
+    {
+      "id": "task828-457ef99fc1a74a01b47f8e6a90366ee9",
+      "input": "The woman complimented the man.\nHe blushed.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.999736487865448
+    },
+    {
+      "id": "task828-081d2b8e192a40d2843232b2f736c954",
+      "input": "The administrator cleared her throat.\nThe meeting commenced.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.996850311756134
+    },
+    {
+      "id": "task828-1075d808225444089f7936eed0ead22d",
+      "input": "The children ran through the sprinkler.\nThey were hot.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9991376399993896
+    },
+    {
+      "id": "task828-60c315810d0f46e79abf210343ee5d22",
+      "input": "The scientist gained recognition.\nShe discovered a new species.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9994648098945618
+    },
+    {
+      "id": "task828-1d1ddbd1391a4a56b27ece7c36ef7f7f",
+      "input": "The boy giggled uncontrollably.\nHis brother tickled him.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9995653033256531
+    },
+    {
+      "id": "task828-ff643e1a471c4f94a4e0ef50a37d5626",
+      "input": "My friend was recovering from surgery.\nI brought her a card and flowers.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9993175268173218
+    },
+    {
+      "id": "task828-bddc15ef4e36412380acbd0eef29494b",
+      "input": "The DJ turned the music on.\nPeople began to dance.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9984858632087708
+    },
+    {
+      "id": "task828-df5a9706988646e3a7d77d66f4d0fe7d",
+      "input": "I lingered in bed upon awakening.\nIt was Saturday.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9443429708480835
+    },
+    {
+      "id": "task828-a138ef24717a44359dbc73d564fd1c23",
+      "input": "The rider fell to the ground.\nThe bull bucked the rider.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9780555367469788
+    },
+    {
+      "id": "task828-738b2d73b4f34d33a4f24fc1ccaeccd3",
+      "input": "The scientist conducted an experiment.\nShe validated her theory.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9996962547302246
+    },
+    {
+      "id": "task828-40337d4f9580442c85d71ef14d281fa7",
+      "input": "The fussy baby calmed down.\nThe parents shook a rattle in front of the baby.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8240507245063782
+    },
+    {
+      "id": "task828-532a0447d4ad49f694c3d78f54cf2cce",
+      "input": "The customer came into the boutique.\nThe window display caught her eye.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9983330368995667
+    },
+    {
+      "id": "task828-d90d560e9c844481a807dc7f4464a2cd",
+      "input": "The man drank water with his meal.\nHis meal was spicy.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9995125532150269
+    },
+    {
+      "id": "task828-bcc22e814a5f407aa807f866dc25eee8",
+      "input": "We ordered a pizza.\nThe pizza was delivered.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.996659517288208
+    },
+    {
+      "id": "task828-cd4901456afe4f2e819185ee43ccd189",
+      "input": "The teenager grew taller than his father.\nHe went through a growth spurt.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5347097516059875
+    },
+    {
+      "id": "task828-89b4e29a52584d55ac5ee7d05f2235bb",
+      "input": "The patient underwent the risky medical procedure.\nSpecialists recommended the procedure.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9962849617004395
+    },
+    {
+      "id": "task828-4905b07f905e4ebba015fda13fc06bb7",
+      "input": "The water in the teapot started to boil.\nThe teapot whistled.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9927737712860107
+    },
+    {
+      "id": "task828-cd16ece7206d4b1f8666cf9c99371d93",
+      "input": "I made a resolution to eat a healthy diet.\nI bought fruits and vegetables.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.997930645942688
+    },
+    {
+      "id": "task828-6f90c391acef47d783d7afffd020c9ab",
+      "input": "The friends' dinnertime conversation turned to politics.\nA debate erupted.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9799774289131165
+    },
+    {
+      "id": "task828-078ea309304d420cbfd1685984f2d16c",
+      "input": "The woman spotted her friend from across the room.\nThe woman waved.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9985584616661072
+    },
+    {
+      "id": "task828-6659909f09c34eb49b49cc5b4f616497",
+      "input": "The driver honked her horn.\nAnother car swerved into her lane.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5505462884902954
+    },
+    {
+      "id": "task828-8d4b748602674e57a7f2c2b1bc16a6ae",
+      "input": "The mother became eye level with her son.\nShe squatted down.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9598278999328613
+    },
+    {
+      "id": "task828-f05b06672c2a41e7971e3d857d3055b9",
+      "input": "The boy mimicked his older brother.\nThe boy looked up to his older brother.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9979270696640015
+    },
+    {
+      "id": "task828-4a2e77a7dd804483b2cdfdcb432cbd95",
+      "input": "The girl desired her parent's approval.\nShe obeyed her parent's rules.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9312795996665955
+    },
+    {
+      "id": "task828-c7bc7ceb7fe5441b97256ab8621d56a9",
+      "input": "The swimmer won the race.\nShe received a gold medal.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997344613075256
+    },
+    {
+      "id": "task828-2f85634c6df44f8b8eb0ea088ddef12c",
+      "input": "I flipped the light switch up and down.\nThe light flickered.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9906637668609619
+    },
+    {
+      "id": "task828-882fe37a7d2b4d79b77f88ca456d47a1",
+      "input": "The woman retired.\nShe received her pension.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8933256268501282
+    },
+    {
+      "id": "task828-3ba9ad72062544b9a6fc17a80767f445",
+      "input": "The judge pounded the gavel.\nThe courtroom broke into uproar.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.95792156457901
+    },
+    {
+      "id": "task828-f57dfb8c31a24c9c9ea180a773bd3b19",
+      "input": "The man dressed in his best suit.\nHe scheduled a meeting with an important client.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9879907965660095
+    },
+    {
+      "id": "task828-9d17883ba4d842ff8b2679ef2d913eb4",
+      "input": "The clock chimed.\nIt was the top of the hour.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9983103275299072
+    },
+    {
+      "id": "task828-aa70b3527bdc4dffa1ad849732b75228",
+      "input": "The man felt obligated to attend the event.\nHe promised his friend that he would go.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8037775754928589
+    },
+    {
+      "id": "task828-8b35fb8900e94a34915808cb0fda85f6",
+      "input": "The journalist wrote a biography about the humanitarian's life.\nThe journalist was intrigued by the humanitarian's work.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9996205568313599
+    },
+    {
+      "id": "task828-8802d82599e8454fb499210a68ab9efa",
+      "input": "The child learned how to read.\nHe began attending school.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8921775817871094
+    },
+    {
+      "id": "task828-7ea603005f9d400e9afa97e2665a7b1e",
+      "input": "The woman lavished her friend with flattery.\nShe wanted to ask her friend for a favor.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9974251985549927
+    },
+    {
+      "id": "task828-c00bf7209fab4fc5b265179e097bfbd9",
+      "input": "The lock opened.\nI turned the key in the lock.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8443613052368164
+    },
+    {
+      "id": "task828-6ecc0975cc0e40a8933522b039f15f2f",
+      "input": "The couple was happy to see each other.\nThey kissed.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9998643398284912
+    },
+    {
+      "id": "task828-92761776461948c0869f1204f885b88b",
+      "input": "The tree branch landed in the river.\nThe branch moved downstream.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9652472734451294
+    },
+    {
+      "id": "task828-8623c862a3704b3181a0dfd16480a6b2",
+      "input": "I pushed the wagon.\nThe wagon wheels spun forward.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9881898164749146
+    },
+    {
+      "id": "task828-f82cdaf5e58b4658a966aac4c8ca7e32",
+      "input": "The lobbyist persuaded the legislature to support the bill.\nThe legislature passed the bill.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9924829602241516
+    },
+    {
+      "id": "task828-9af8e49a9bb34532bbf82d0b3307c2b7",
+      "input": "The woman read the newspaper.\nShe discovered the outcome of the election.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9862037897109985
+    },
+    {
+      "id": "task828-867d70f1fe5b4b14b2d4f26f727bb549",
+      "input": "The couple got engaged.\nThey planned a wedding.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.999483585357666
+    },
+    {
+      "id": "task828-2541d5f52fda4215b2ca6de91fe161be",
+      "input": "The woman became famous.\nPhotographers followed her.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9993896484375
+    },
+    {
+      "id": "task828-cf09d954e6b24304abc653b9a1194125",
+      "input": "The office was closed.\nIt was a holiday.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9925958514213562
+    },
+    {
+      "id": "task828-a7d27d0e712b48c3a952fe6ba7f7cec1",
+      "input": "The girl memorized the code.\nShe recited it to herself.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9878606200218201
+    },
+    {
+      "id": "task828-266236bdc2f147488ef3bbaad45c1580",
+      "input": "I poured the water into the glass.\nThe glass became full.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.998863697052002
+    },
+    {
+      "id": "task828-270013d1619f4bf9b37a18b12ffb9229",
+      "input": "The man remained silent when his friend finishing speaking.\nHe was thinking about his friend's words.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9893110990524292
+    },
+    {
+      "id": "task828-1e5f7dc56bea4d8bba2a2f19ca478c87",
+      "input": "The man anticipated cold weather on his trip.\nHe packed warm clothing in his suitcase.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7398211359977722
+    },
+    {
+      "id": "task828-8892fa6e2fe04b66b9944d4863b428b4",
+      "input": "The student knew the answer to the question.\nHe raised his hand.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9975441098213196
+    },
+    {
+      "id": "task828-33c3a67553f84e88aa53068795598c50",
+      "input": "The movie tickets sold out.\nIt was opening day for the movie.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9996401071548462
+    },
+    {
+      "id": "task828-5fbc91cc8972410582fa92011f95eac8",
+      "input": "The man lost weight.\nPeople complimented him.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9940615296363831
+    },
+    {
+      "id": "task828-f54c29ed008b4ae7a760df93cb07c863",
+      "input": "The boy squeezed the balloon.\nThe balloon popped.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9874223470687866
+    },
+    {
+      "id": "task828-f7293d7ac5234dd0bb806a8a23a886fe",
+      "input": "I pushed the door.\nThe door opened.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9960933327674866
+    },
+    {
+      "id": "task828-6b6d0fd5e25641a2b9833b325010f638",
+      "input": "The woman felt envious of her sister.\nHer sister was happy.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9998528957366943
+    },
+    {
+      "id": "task828-5ef9f76949494f9580420827f472070a",
+      "input": "The cashier opened the cash register.\nThe customer handed her money.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8794721961021423
+    },
+    {
+      "id": "task828-3a87fb7e2bbd4943896173b2d5945f4b",
+      "input": "The street musician attracted a crowd.\nPeople gave him change.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9968913197517395
+    },
+    {
+      "id": "task828-5bd6dda0a2c84f1bb17ea3d7e36472a8",
+      "input": "The passengers got off the train.\nThe train arrived at the station.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9912549257278442
+    },
+    {
+      "id": "task828-a79b397aa1e74a06a6fe26bbe259d9a0",
+      "input": "The couple signed a lease for an apartment.\nThe couple moved into the apartment.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9958707690238953
+    },
+    {
+      "id": "task828-9967f51d56c34d2e85bbcbb511399a62",
+      "input": "The woman sat outside on the porch.\nShe wanted to watch the sunset.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9961458444595337
+    },
+    {
+      "id": "task828-355626af34894063b731d6a530584209",
+      "input": "The girl bragged to her friends.\nShe won a contest.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9978799819946289
+    },
+    {
+      "id": "task828-b8b144e0d37943c0a6f79e1d71046e81",
+      "input": "The man put on sunscreen.\nHe went to the beach.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8720700144767761
+    },
+    {
+      "id": "task828-782ecfaccdd0474dbe41f9bfd21a3f43",
+      "input": "The researchers proved the theory.\nIndividuals accepted the theory.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9994014501571655
+    },
+    {
+      "id": "task828-d4e09e29b1db494191df460cd153db43",
+      "input": "I entered my combination on the lock.\nThe lock popped open.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9875132441520691
+    },
+    {
+      "id": "task828-72a661ebcc4342529f0afb1d1ee8cd8f",
+      "input": "The crowd intensified.\nThe father grabbed his son's hand.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9964663982391357
+    },
+    {
+      "id": "task828-9f68df7da4654cf3a67565c5c1801d44",
+      "input": "The kayakers paddled their oars.\nThe kayak reached the shore.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9984185695648193
+    },
+    {
+      "id": "task828-9e2e14968a4b4677aaecb52970547fb0",
+      "input": "I turned on the fan.\nI felt cool air pass over me.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9887080192565918
+    },
+    {
+      "id": "task828-83891b32b68f4501809034a35e086954",
+      "input": "The woman travelled abroad.\nShe wanted to learn about other cultures.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9911990761756897
+    },
+    {
+      "id": "task828-b2837d965173419d9c2ac9d7d03a53cc",
+      "input": "The man was jealous of his coworker.\nHis coworker got a promotion.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9966838955879211
+    },
+    {
+      "id": "task828-c59265e8c8864bfda7c7fa74c3cb7465",
+      "input": "The man witnessed aliens.\nHe was hallucinating.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.917293131351471
+    },
+    {
+      "id": "task828-a60fe521cee14f3684f1a2adddedb34a",
+      "input": "The artist created new work.\nShe felt a stroke of inspiration.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997981190681458
+    },
+    {
+      "id": "task828-d0b3557a16f94928aab2d40633445d82",
+      "input": "The son moved away from home.\nHe was going to college.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6871020793914795
+    },
+    {
+      "id": "task828-650c041c3c904fa984db2ebc636ea593",
+      "input": "We rode the roller coaster.\nIt looked fun.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9998235106468201
+    },
+    {
+      "id": "task828-e5173143d9f54f878c504a7d6ccaefa0",
+      "input": "The elevator doors opened.\nThe elevator arrived at the designated floor.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9833004474639893
+    },
+    {
+      "id": "task828-cb9ac45747f54026a5f153c6a1932539",
+      "input": "The teenager snuck out of the house.\nHis parents grounded him.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9393041729927063
+    },
+    {
+      "id": "task828-c39771e75d6a424fb9970903d6bfc7be",
+      "input": "I baked an apple pie.\nA warm aroma filled the kitchen.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997226595878601
+    },
+    {
+      "id": "task828-b97e1ccb906643d1b9e00498bf2beda5",
+      "input": "Steam rose off of the pot of water.\nThe water boiled.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9791833758354187
+    },
+    {
+      "id": "task828-320abd0aea6d432ab08a643b80fca1a6",
+      "input": "Everyone disapproved of the couple's engagement.\nThe couple eloped.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9995569586753845
+    },
+    {
+      "id": "task828-e4721d91a11640a9be6c00f37b152d11",
+      "input": "The building was dedicated to the millionaire.\nThe millionaire contributed the funds to build it.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9981649518013
+    },
+    {
+      "id": "task828-c26dfec9deaa498aa0aa03bfa6ea32d3",
+      "input": "The court upheld the controversial ruling.\nA riot broke loose in front of the courthouse.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9865732192993164
+    },
+    {
+      "id": "task828-01ac7627eefa41df8dfbf60fcfc784fb",
+      "input": "The rain was pouring down.\nI dashed to get inside.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.969597339630127
+    },
+    {
+      "id": "task828-1bc305ec88264f8c813ad6d7f8d49bec",
+      "input": "The girl handed her money to the cashier.\nThe cashier gave the girl her change.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8693592548370361
+    },
+    {
+      "id": "task828-a23b27642a8444598b5351857dbc26e0",
+      "input": "Citizens hung the national flag up outside their homes.\nThe country was commemorating its independence.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9830916523933411
+    },
+    {
+      "id": "task828-371d9777fcfa4f6f8782fc359f1415d9",
+      "input": "The couple left early for the show.\nThey anticipated traffic around the theatre.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9977715611457825
+    },
+    {
+      "id": "task828-ec30b6d6664e4b1c8ad31b07152aeb0a",
+      "input": "The woman stayed home from work.\nHer coworker covered for her.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9012521505355835
+    },
+    {
+      "id": "task828-31483842ed854898a0ece03a3118438e",
+      "input": "The man signed the activists' petition.\nHe supported their cause.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9985653758049011
+    },
+    {
+      "id": "task828-f15a46799af84b1ba57f1ad610c9dd93",
+      "input": "I encountered an old friend.\nI gave him a hug.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997779726982117
+    },
+    {
+      "id": "task828-a618e79bbde04bedb8e090f5151df66d",
+      "input": "The woman put on her shades.\nThe sunlight was bright.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997606873512268
+    },
+    {
+      "id": "task828-63d8c79354e348909295ae18b446f83e",
+      "input": "The man gazed at the night sky.\nHe thought it was beautiful.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.999574601650238
+    },
+    {
+      "id": "task828-ee80ae7abf5b42a182109d99597e8db7",
+      "input": "I craved a glass of milk.\nI was eating cookies.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8642865419387817
+    },
+    {
+      "id": "task828-278dae1ed51446eaab7f4dd01bfd4632",
+      "input": "The baby fell asleep.\nThe father gently rocked the baby.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7643666863441467
+    },
+    {
+      "id": "task828-bd476e48ced9449b992eda481ff041d3",
+      "input": "I exercised.\nI felt energetic.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9998422861099243
+    },
+    {
+      "id": "task828-a9605172054f4aa38dab80c165e8327d",
+      "input": "The vacationers took a ferry to the resort.\nThe resort was on an island.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7337257862091064
+    },
+    {
+      "id": "task828-1c7caad6733d47568be9237f886421ec",
+      "input": "The criminal turned himself in.\nThe evidence implicated him.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9902763366699219
+    },
+    {
+      "id": "task828-b648dd6ba1ee4f2b95dd33a3631b55d1",
+      "input": "The girl stepped on the ice.\nShe slid.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8823813199996948
+    },
+    {
+      "id": "task828-1a27427350c84ac1b9608fa15c48af74",
+      "input": "Lava flowed from the volcano.\nThe volcano erupted.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9979520440101624
+    },
+    {
+      "id": "task828-49e8e89329344108a556ef59d9733664",
+      "input": "The team rigged the contest in their favor.\nThey won.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9995071887969971
+    },
+    {
+      "id": "task828-ce390ded14874bb690997374c269b051",
+      "input": "The girl yanked the ribbon out of her hair.\nThe ribbon looked babyish.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9976961016654968
+    },
+    {
+      "id": "task828-c65b7efdd1764fe9aabd23bc86dc956e",
+      "input": "The student received a scholarship to go to college.\nShe made good grades.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997426867485046
+    },
+    {
+      "id": "task828-c86d8e8826524c0295c35a773aea02b0",
+      "input": "The girl poked fun at the boy.\nShe had a crush on him.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9798713326454163
+    },
+    {
+      "id": "task828-a7f5da274a3c4d39a08bd41e119ccf09",
+      "input": "The man extended his hand to me.\nI shook his hand.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9972510933876038
+    },
+    {
+      "id": "task828-b928850f4ef84778a7dcf250dc7630c0",
+      "input": "I ducked.\nThe frisbee soared towards my head.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.997622549533844
+    },
+    {
+      "id": "task828-fe9fe97d3c3a49e8ba3325d95347f8be",
+      "input": "The girl dropped the rubber ball.\nThe ball bounced.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.998930037021637
+    },
+    {
+      "id": "task828-0ed493baeaf24897be9601f52f7cd404",
+      "input": "I picked the tomatoes from the vine.\nThey were ripe.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9991773962974548
+    },
+    {
+      "id": "task828-fc05284925ed4fb3a7eb1b04462f79b0",
+      "input": "The mercury in the thermometer rose.\nThe weather got warmer.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9684425592422485
+    },
+    {
+      "id": "task828-c491e1b43a3b4d3981f9e7efddbe3a91",
+      "input": "The student received tutoring.\nHis grades improved.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9994561076164246
+    },
+    {
+      "id": "task828-f697e4bf2a464e8d9d3b66085703055f",
+      "input": "I felt comfortable.\nI wrapped myself in a blanket.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9976279139518738
+    },
+    {
+      "id": "task828-4357d8f6ab4341fa8c61809ad56a485c",
+      "input": "I polished the stone.\nIt became shiny.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.999427318572998
+    },
+    {
+      "id": "task828-63a175db013e49ddb5757cd60a95a047",
+      "input": "I added sugar to the coffee.\nThe coffee tasted sweet.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997780919075012
+    },
+    {
+      "id": "task828-d8fdc10e581c48818f83b98f15e7888d",
+      "input": "The girl flashed a smile.\nHer dimples showed.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9992098808288574
+    },
+    {
+      "id": "task828-05b220564b7a45fcb0740d1d3b42f863",
+      "input": "The girl attended her classmate's birthday party.\nShe received an invitation.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9959946870803833
+    },
+    {
+      "id": "task828-4c7ac0a937b344298a9aafa37c68ee55",
+      "input": "The man sprayed himself with cologne.\nHe wanted to impress his date.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9962008595466614
+    },
+    {
+      "id": "task828-322ccbd69f7f49a79898a5370c48c0e4",
+      "input": "The family moved into a bigger house.\nThe mother gave birth to twins.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.996023416519165
+    },
+    {
+      "id": "task828-602ef10d39ed43c0a3f7520b40b7f09a",
+      "input": "My friend's dog died.\nI gave him a hug.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9992202520370483
+    },
+    {
+      "id": "task828-d520e1d78c1d4d9f9e9b4a8e7aff8101",
+      "input": "The man felt proud of his brother.\nHis brother got accepted into law school.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9996790885925293
+    },
+    {
+      "id": "task828-3908c3face9143fd991bd009d565a01a",
+      "input": "The client approved the architect's plans for the building.\nThe architect constructed the building.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.998429000377655
+    },
+    {
+      "id": "task828-4cd5cd2fc6e34f2e84c6da6d92b4b198",
+      "input": "The girl joined the debate team.\nShe learned communication skills.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9983161687850952
+    },
+    {
+      "id": "task828-ff7890de9f8d4c91a4985955ce42bd4a",
+      "input": "My mood improved.\nI listened to music.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9996228218078613
+    },
+    {
+      "id": "task828-9219b0d759b44b9480556cc249150e71",
+      "input": "The man wanted to watch the sunrise.\nHe got up early.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9850408434867859
+    },
+    {
+      "id": "task828-9131e1e744e646dba6f603245bbb1a2b",
+      "input": "The man and woman fell in love.\nThey got married.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9994465708732605
+    },
+    {
+      "id": "task828-ba4808adffa84f19837a96dc1eba796f",
+      "input": "I opened my eyes.\nI woke up.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9966848492622375
+    },
+    {
+      "id": "task828-cff8a33acd804ed196eaf1991491df86",
+      "input": "The artist mixed yellow paint into blue paint.\nThe paint turned green.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6938970685005188
+    },
+    {
+      "id": "task828-9b36db7e276c4d4a9400f46dd957b66e",
+      "input": "My brother was released from the hospital.\nI welcomed him back home.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9998171925544739
+    },
+    {
+      "id": "task828-b8d7aebf16694a4fb5887ca17c8fae3f",
+      "input": "The curtain on the stage went up.\nThe opening scene of the play began.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9975512623786926
+    },
+    {
+      "id": "task828-86984e1ef304498785f045458cd92e3f",
+      "input": "A boom reverberated across the stage.\nThe musician pounded the drum.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9986166954040527
+    },
+    {
+      "id": "task828-5d04aa21651e4a68975a8daf0b63fcab",
+      "input": "The girl switched schools.\nShe moved to a new town.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7857668399810791
+    },
+    {
+      "id": "task828-af18905a293c49a6bf59db97a3d98533",
+      "input": "The child landed on the trampoline.\nShe sprung back up into the air.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9986779093742371
+    },
+    {
+      "id": "task828-56345d15d4c24111b578ed6b5bfdded9",
+      "input": "The forest fire spread.\nThe winds became stronger.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9950632452964783
+    },
+    {
+      "id": "task828-41fd2fcbe99149218ee777449f60fbb2",
+      "input": "The physician diagnosed the patient.\nShe identified the patient's symptoms.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9661707878112793
+    },
+    {
+      "id": "task828-1524c83b022441e19e00a18c8c3a6250",
+      "input": "The man's arm muscles bulged.\nHe flexed his arms.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9843408465385437
+    },
+    {
+      "id": "task828-f033abd017744c028d1afe59f8233252",
+      "input": "The man raised his eyebrows.\nHe was surprised.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9969407916069031
+    },
+    {
+      "id": "task828-86c492d909644163898dc4baf5ab735a",
+      "input": "I excused my colleague's blunder.\nI believed his intentions were good.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9836355447769165
+    },
+    {
+      "id": "task828-d76c07ace41e41d6a4c4749248ebb84e",
+      "input": "The man stood out in the crowd.\nHe wore a neon vest.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9988183379173279
+    },
+    {
+      "id": "task828-bb326b0c2a294b5fbc8831a409a57335",
+      "input": "The public speaker cracked a joke.\nThe audience laughed.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9962511658668518
+    },
+    {
+      "id": "task828-b2b5036d17594f609ed1c708ee3dd316",
+      "input": "The woman declared bankruptcy.\nShe acquired massive debt.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5026556253433228
+    },
+    {
+      "id": "task828-2ef2c2fc62624600b766704b77ab4ca2",
+      "input": "The lights in my friend's apartment were on.\nI decided to pay him a visit.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9260596632957458
+    },
+    {
+      "id": "task828-cee3a3f4123c4be19f815765e2d3cc58",
+      "input": "I put the flower under my nose.\nI picked up the flower's scent.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9993879795074463
+    },
+    {
+      "id": "task828-e0a0c46bb40241dbba577aef972f5f48",
+      "input": "The woman felt nostalgic.\nShe ran into a childhood friend.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9989861845970154
+    },
+    {
+      "id": "task828-597d8249690946d9b784229a4dbded9c",
+      "input": "The bird flapped its wings.\nIt ascended upwards.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9981135129928589
+    },
+    {
+      "id": "task828-a7726402ed304566b9293c2bad0911a0",
+      "input": "I parked in the driveway.\nThe garage was full.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9065887928009033
+    },
+    {
+      "id": "task828-98e841a8508c4e33aab52312530402c3",
+      "input": "The stadium played the national anthem.\nThe fans turned to the flag.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9193879961967468
+    },
+    {
+      "id": "task828-279755b112bf4f5e85e7c33756d979fd",
+      "input": "I set the paper towel on the spill.\nThe towel absorbed the liquid.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8558990359306335
+    },
+    {
+      "id": "task828-6e45405afcda4fc4afb38c853bd6640a",
+      "input": "I asked my friend for advice.\nI valued his opinion.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997476935386658
+    },
+    {
+      "id": "task828-6e7923ef3ffa4a158787894264b32cff",
+      "input": "The family congratulated the couple.\nThe couple announced that they were having a baby.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997430443763733
+    },
+    {
+      "id": "task828-94b935ada5f14f5cbfe217d2ec1cc3e5",
+      "input": "The girl sent the boy a valentine.\nShe liked him.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9993182420730591
+    },
+    {
+      "id": "task828-d08e84f9e26a4963b45c66d13a2afa72",
+      "input": "I nodded my head at my friend's statement.\nI agreed with him.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9993147850036621
+    },
+    {
+      "id": "task828-7a223f7af7a64fbe86f979c08de44425",
+      "input": "The woman set an ambitious goal.\nShe worked hard.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9996127486228943
+    },
+    {
+      "id": "task828-f5cceed2d34d4f629589d060f5917e71",
+      "input": "The wealthy man died of old age.\nHis son inherited his fortune.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.993094801902771
+    },
+    {
+      "id": "task828-ccaa3a510f03488caea3f1908b386674",
+      "input": "The woman stomped on the flames.\nThe flames went out.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9706465601921082
+    },
+    {
+      "id": "task828-b35b178ea82c48b785cd8ecce053be5e",
+      "input": "The public figure got out of the limousine.\nCameras flashed in his direction.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9952294826507568
+    },
+    {
+      "id": "task828-1ea54aebbf9a4de5ba9f401203fb2e33",
+      "input": "The college student wanted to meet other students on campus.\nHe joined a fraternity.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9568880796432495
+    },
+    {
+      "id": "task828-721621b61bda4ed498af5259033575f6",
+      "input": "The laptop wouldn't turn on.\nI dropped it.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.756068229675293
+    },
+    {
+      "id": "task828-1fc4fb48a79e4e3d8e00115d00eb302b",
+      "input": "The man obtained a degree.\nHe became qualified for the job he wanted.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9929910898208618
+    },
+    {
+      "id": "task828-f220ff877c8a41d4a25b528f22d0e878",
+      "input": "The man's voice projected clearly throughout the auditorium.\nHe spoke into the microphone.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.996990442276001
+    },
+    {
+      "id": "task828-41e17792a68f419c9b6dabf063720b6f",
+      "input": "The family went to the zoo.\nThe children admired the animals.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9997865557670593
+    },
+    {
+      "id": "task828-a2c5eadca0774f8881c6873cf2f7bb69",
+      "input": "I bought my mother a present.\nIt was her birthday.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9988263249397278
+    },
+    {
+      "id": "task828-2735fa9884394a35ad661661e79b2412",
+      "input": "I struck the match.\nThe match produced a flame.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9983876943588257
+    },
+    {
+      "id": "task828-6f547d7653634d32b680e8569bba247d",
+      "input": "The country discovered new land.\nThe country colonized the land.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9079332947731018
+    },
+    {
+      "id": "task828-fa3f662fb2394a8a966542485e711b23",
+      "input": "The father caught his son lying.\nHis son confessed the truth.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9621909856796265
+    },
+    {
+      "id": "task828-1b3c899f1c324acc9be958f504c5115b",
+      "input": "The train slowed down.\nIt was approaching the station.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8907766938209534
+    },
+    {
+      "id": "task828-4986e563d1b14290aacbd93d5f3be40d",
+      "input": "The woman's business succeeded.\nShe became wealthy.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9996117949485779
+    },
+    {
+      "id": "task828-cdd123a1a07a47dabb2e6e5874d3670f",
+      "input": "The students exited the classroom.\nThe bell rang.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9963846206665039
+    },
+    {
+      "id": "task828-201a70386ee54d98b9721901d8b94c2a",
+      "input": "The child let go of the balloon string.\nThe balloon rose into the air.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9994208812713623
+    },
+    {
+      "id": "task828-ab401a565d3e4a8e80061aa2b3503da3",
+      "input": "The man did a canon ball into the pool.\nThe man soaked the lifeguard.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6158835887908936
+    },
+    {
+      "id": "task828-dc1e384b76b644448df21064d8c6a218",
+      "input": "The boy studied all night.\nHe passed the exam.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.925475001335144
+    },
+    {
+      "id": "task828-de0981c455c24a34a5781c58e0eecf29",
+      "input": "I put my hand to my chest.\nI felt my heartbeat.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9952473044395447
+    },
+    {
+      "id": "task828-674ee92595d54061af182765e0e3e9ef",
+      "input": "The family wanted to get to know their new neighbors.\nThe family invited the neighbors over for dinner.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9988276362419128
+    },
+    {
+      "id": "task828-3b1bbd4f0e65438ca115a6b184032270",
+      "input": "Water splashed up from the pool.\nThe swimmer dove into the pool.",
+      "output": [
+        "cause"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9954075217247009
+    },
+    {
+      "id": "task828-b62bf93742944f4591c4af787ff38aa5",
+      "input": "The man started an argument with me.\nMy friend stood up for me.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.998247504234314
+    },
+    {
+      "id": "task828-b87b4a94e6db488d8c5b6bcd973ea260",
+      "input": "The man unlaced his shoes.\nThe shoes loosened.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9611411094665527
+    },
+    {
+      "id": "task828-b3f2de2d17c3463c949cd1e17edc84d8",
+      "input": "The runner sensed his competitor gaining on him.\nHe sped up his pace.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9981318116188049
+    },
+    {
+      "id": "task828-0ed0687337d54f488f52e728aa606489",
+      "input": "The man anticipated the team's victory.\nHe made a bet with his friends.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9994481205940247
+    },
+    {
+      "id": "task828-367b1cfd1f3944fc96a881ebbe21fd80",
+      "input": "The boy couldn't fall asleep.\nHe counted sheep.",
+      "output": [
+        "effect"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.977980375289917
+    }
+  ]
+}

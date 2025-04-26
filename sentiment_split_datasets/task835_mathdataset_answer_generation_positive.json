@@ -1,0 +1,1208 @@
+{
+  "Contributors": [
+    "Chirag Vartak"
+  ],
+  "Source": [
+    "mathmatics_dataset"
+  ],
+  "URL": [
+    "https://github.com/deepmind/mathematics_dataset"
+  ],
+  "Categories": [
+    "Question Answering"
+  ],
+  "Reasoning": [
+    "Numerical Reasoning",
+    "Quantitative Reasoning",
+    "Mathematics"
+  ],
+  "Definition": [
+    "Given a simple high-school level math question, you are required to solve it and provide the final answer. The final answer is always a single number. These questions can range from a variety of topics like simple arithmetic, solving equations, converting a quantity from one unit to another, finding remainders/GCD/LCM, finding probabilities etc. Each question has only one correct answer. This answer can be a positive or negative integer, a fraction or a decimal number. If the answer is a negative number use the hyphen (e.g. -42) symbol for the minus sign. For decimal numbers, do not add extra zeros after the decimal point. For fractional numbers, separate the numerator and denominator using a forward slash (e.g. 3/25)."
+  ],
+  "Input_language": [
+    "English"
+  ],
+  "Output_language": [
+    "English"
+  ],
+  "Instruction_language": [
+    "English"
+  ],
+  "Domains": [
+    "Mathematics"
+  ],
+  "Positive Examples": [
+    {
+      "input": "Let y = -74 - -79. Solve 0 = -y*q - 13 + 3 for q.",
+      "output": "-2",
+      "explanation": "Solving the two equations, we find that the value of q is -2. The solution can be obtained by simply solving the equations one after another using substitution."
+    },
+    {
+      "input": "Work out 29.8 + -0.18.",
+      "output": "29.62",
+      "explanation": "This is a simple addition involving a negative number. The answer is 29.62. This is basic arithmetic and the standard conventions of the plus and minus operations are observed."
+    },
+    {
+      "input": "How many nanometers are there in 610.1077 millimeters",
+      "output": "610107700",
+      "explanation": "The conversion from mm to nm yields the answer 610107700. This conversion is obtained by multiplying the mm value by one million."
+    },
+    {
+      "input": "Four letters picked without replacement from bboobleoeewobw. What is prob of picking 3 o and 1 e?",
+      "output": "12/1001",
+      "explanation": "Since the probability calculated can be more accurately expressed as the fraction 12/1001, that is the answer. The answer is not converted to a decimal number unnecessarily."
+    }
+  ],
+  "Negative Examples": [
+    {
+      "input": "Let y = -48 - -65. Solve -4*o = 5 - y for o.",
+      "output": "0",
+      "explanation": "The solution for o for the given simultaneous equations is 3, not zero. Hence, this is an incorrect answer for the question asked."
+    },
+    {
+      "input": "What is the distance between 0.055 and 21.35?",
+      "output": "21.405",
+      "explanation": "The difference is asked, and not the sum. Hence the correct answer is 21.295. The answer is a precise, terminating decimal."
+    },
+    {
+      "input": "What is 3/5 of a millennium in decades?",
+      "output": "60",
+      "explanation": "3/5 of a millenium is 600 years, which is 60 decades. This conversion can be done by knowing that a millennium consists of 1000 years and one decade is 10 years."
+    },
+    {
+      "input": "Calculate prob of picking 1 c and 1 d when two letters picked without replacement from exhdycxy.",
+      "output": "1/28",
+      "explanation": "There is only a single c and d in the string, and hence only one way to pick it from the total number of ways. The probability, after calculation comes to be 1/28."
+    }
+  ],
+  "Instance License": [
+    "Apache 2.0"
+  ],
+  "Instances": [
+    {
+      "id": "task835-c6fc033f694a493d83c63ec5ec2e5406",
+      "input": "-913+3",
+      "output": [
+        "-910"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9956217408180237
+    },
+    {
+      "id": "task835-d65045ce591d4e11ba0731740ba4ebf6",
+      "input": "Convert 13.87146 months to millennia.",
+      "output": [
+        "0.001155955"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6255274415016174
+    },
+    {
+      "id": "task835-463f55e6c5c142a5a49e6a1aa070878a",
+      "input": "-5*1",
+      "output": [
+        "-5"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9967648983001709
+    },
+    {
+      "id": "task835-4081534229f8494e97e29a29eba99a59",
+      "input": "58/(-30) + 15/25",
+      "output": [
+        "-4/3"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7026553153991699
+    },
+    {
+      "id": "task835-51a7ab67342b48b6acbd7d1e64ed7593",
+      "input": "Work out 2 * -14.7.",
+      "output": [
+        "-29.4"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.948564350605011
+    },
+    {
+      "id": "task835-f7ddc5067a9b408a8661ef12fa4be670",
+      "input": "(-4 - 0) + 0 + 10 + -6",
+      "output": [
+        "0"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9452130794525146
+    },
+    {
+      "id": "task835-c48785692f6f405eb38f4354b20f8d29",
+      "input": "Evaluate (2 + -8 - -2) + -120 + 129.",
+      "output": [
+        "5"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9582021832466125
+    },
+    {
+      "id": "task835-bef083cd60a84999bf5f7636294a1885",
+      "input": "Let z = -210 + 300. Let t be (-14)/(-21) - (-398)/6. Let y = -31 + t. What is the greatest common factor of y and z?",
+      "output": [
+        "18"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6299221515655518
+    },
+    {
+      "id": "task835-c4a6cb4a95004cc19fa143f27e0b01a7",
+      "input": "-0.1105*-3",
+      "output": [
+        "0.3315"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7519062757492065
+    },
+    {
+      "id": "task835-456697bb407843709a651a395daaecd8",
+      "input": "-87 divided by 8",
+      "output": [
+        "-87/8"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9670011401176453
+    },
+    {
+      "id": "task835-b07fc7a6fa814c3f83b9ecc9c383b85a",
+      "input": "Evaluate 2 + 21/5*-1 - -2.",
+      "output": [
+        "-1/5"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8187440037727356
+    },
+    {
+      "id": "task835-c549d8b8a4b949a6ba9559ed92bcc7b8",
+      "input": "Let n be -2 + 0 + 14/(-2). Let q = 18 + n. What is the greatest common factor of q and 81?",
+      "output": [
+        "9"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7010092735290527
+    },
+    {
+      "id": "task835-0cddbe830aa347cfb8187ac2459a9f38",
+      "input": "19 divided by 19",
+      "output": [
+        "1"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9224177598953247
+    },
+    {
+      "id": "task835-9b87ef1b28c64a93bff388cb4f41167c",
+      "input": "3 - (-4 + 4 + 2)",
+      "output": [
+        "1"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8203876614570618
+    },
+    {
+      "id": "task835-e5cc05b59ef147d0acc6230962627b58",
+      "input": "-23810 divided by 5",
+      "output": [
+        "-4762"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6945831179618835
+    },
+    {
+      "id": "task835-3d7a3352d5b743d69cacb3f89f3a32a0",
+      "input": "Evaluate 3 + 3 + (1 - 1).",
+      "output": [
+        "6"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9752631783485413
+    },
+    {
+      "id": "task835-9e1a8664bd454f1a873b4211d551d981",
+      "input": "Evaluate ((-8)/(-12))/1*-3.",
+      "output": [
+        "-2"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5172088146209717
+    },
+    {
+      "id": "task835-6cbdbad23bb9474c9909a4272465035f",
+      "input": "42*157",
+      "output": [
+        "6594"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9703639149665833
+    },
+    {
+      "id": "task835-ba25caccc77c43119d67b9d65f72e866",
+      "input": "((-2)/4)/(4/6)*-8",
+      "output": [
+        "6"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7731989026069641
+    },
+    {
+      "id": "task835-f6c7b6d32b764b34b3936d92ee5a7aa8",
+      "input": "Let y be -6 + 56 - 1*-2. Let h(k) = k**3 + 6*k**2 - k + 7. Let l be h(-6). What is the greatest common factor of y and l?",
+      "output": [
+        "13"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9842442870140076
+    },
+    {
+      "id": "task835-956e81e29c604aa7b1d0eb3c3f624f09",
+      "input": "Work out 225007 - 2.",
+      "output": [
+        "225005"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7249758839607239
+    },
+    {
+      "id": "task835-c7f8c12dd7584146a6046b76c5286fdc",
+      "input": "Add 0.2 and 52.3.",
+      "output": [
+        "52.5"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8588157296180725
+    },
+    {
+      "id": "task835-6b186dd89d1241109f02f375c25836d9",
+      "input": "1287 divided by -1",
+      "output": [
+        "-1287"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6361998319625854
+    },
+    {
+      "id": "task835-10608fcc0862463da3e98f4c10a9948a",
+      "input": "Evaluate -5 + -4 + 13 + (-2 - -2).",
+      "output": [
+        "4"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.914972186088562
+    },
+    {
+      "id": "task835-9cfe8a934cf6434eb9d8ef8a653af2ec",
+      "input": "(-3 - 2) + -1 + 0 + 1",
+      "output": [
+        "-5"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9582763910293579
+    },
+    {
+      "id": "task835-9f6520a3244449c083a44ae94612419f",
+      "input": "Suppose -10*i = -11*i - 22. Let p = i - -74. Let g(x) = x**3 - 2*x**2 - 5*x + 1. Let k be g(4). What is the greatest common divisor of k and p?",
+      "output": [
+        "13"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8812217712402344
+    },
+    {
+      "id": "task835-0750a97090264370a21f2e5140b206c3",
+      "input": "Add together -0.08 and 4954.",
+      "output": [
+        "4953.92"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6856673359870911
+    },
+    {
+      "id": "task835-76a274b33e4d4b939c4ba60be18fbb50",
+      "input": "-196 divided by 7",
+      "output": [
+        "-28"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6747704148292542
+    },
+    {
+      "id": "task835-9aba8d2968d94a66afb897640ecee91f",
+      "input": "Evaluate (-7)/6 + 2 + 9/(-27).",
+      "output": [
+        "1/2"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8408549427986145
+    },
+    {
+      "id": "task835-78fc0f254f0e4f22bf15f5d26e2943a4",
+      "input": "Convert 25.14383 millennia to years.",
+      "output": [
+        "25143.83"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9466438889503479
+    },
+    {
+      "id": "task835-0f367dc8ee0e436cbb06bd39165b3c22",
+      "input": "-14649+2",
+      "output": [
+        "-14647"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9725112915039062
+    },
+    {
+      "id": "task835-05d16ee6e2294ffa81b21fc1f6122170",
+      "input": "11 divided by 379",
+      "output": [
+        "11/379"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6700839400291443
+    },
+    {
+      "id": "task835-2c38ef672fcb47089546812b140cc347",
+      "input": "504 divided by 42",
+      "output": [
+        "12"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8909152150154114
+    },
+    {
+      "id": "task835-a897e2c91df24083819ef1b81716fb0e",
+      "input": "Convert 515.6901 decades to millennia.",
+      "output": [
+        "5.156901"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8899052143096924
+    },
+    {
+      "id": "task835-20b8e48de9ed41399b09ac3a359a4f90",
+      "input": "Evaluate (-1 - (10 + 4)) + 10.",
+      "output": [
+        "-5"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8715686798095703
+    },
+    {
+      "id": "task835-120b4a6345af4bdc85bc5629ae6b88c1",
+      "input": "Evaluate -4 + (-5 - -11) - 4.",
+      "output": [
+        "-2"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8485667109489441
+    },
+    {
+      "id": "task835-4a206656d3b04fdf9bfa8c3859886b24",
+      "input": "5*-483",
+      "output": [
+        "-2415"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7972484230995178
+    },
+    {
+      "id": "task835-8ddd26916a8a4f7d9276920e60fefb8d",
+      "input": "100.7*0.5",
+      "output": [
+        "50.35"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6708307862281799
+    },
+    {
+      "id": "task835-13ee8f68d1f8459ca44349e5f8c875c7",
+      "input": "Convert 0.056769 decades to millennia.",
+      "output": [
+        "0.00056769"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5590895414352417
+    },
+    {
+      "id": "task835-e3158d7d836949b3b4e249bb918d1fd1",
+      "input": "-1.72 * -1",
+      "output": [
+        "1.72"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9864939451217651
+    },
+    {
+      "id": "task835-cd62ec1f00b346a9991083021dab64e0",
+      "input": "Let d(q) = 3*q - 10 - 3 + 0. Let s be d(6). What is the greatest common factor of 25 and s?",
+      "output": [
+        "5"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8965229988098145
+    },
+    {
+      "id": "task835-e4ab02b1823b44a19e1fd8e10528f447",
+      "input": "What is 3/5 of a millennium in decades?",
+      "output": [
+        "60"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.92542964220047
+    },
+    {
+      "id": "task835-a82d3dacb8004b23a1100fbb44242ba9",
+      "input": "Evaluate (2/28)/(6/24).",
+      "output": [
+        "2/7"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7288991212844849
+    },
+    {
+      "id": "task835-60be2d1acffe48d687e628a8ac6883d9",
+      "input": "Work out -1.7 * 8.",
+      "output": [
+        "-13.6"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9806551933288574
+    },
+    {
+      "id": "task835-be09a3984c06409296f5e22cfae25c64",
+      "input": "Suppose 2*n - 49 = -c, -n + c + 27 = 2*c. Let x be (-41 + 40)/((-1)/55). What is the greatest common divisor of x and n?",
+      "output": [
+        "11"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6322935223579407
+    },
+    {
+      "id": "task835-0ced2d15d36740738e9ccfe4a7491845",
+      "input": "174/203*14/(-3)",
+      "output": [
+        "-4"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7322538495063782
+    },
+    {
+      "id": "task835-8116fe5d940f4131b75ff6eca2f34ffa",
+      "input": "(6/30)/(1/3)",
+      "output": [
+        "3/5"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6830524206161499
+    },
+    {
+      "id": "task835-c74badb06eb84b3698661e57b4daab47",
+      "input": "-4 + (6 - 11) + 4",
+      "output": [
+        "-5"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9948703050613403
+    },
+    {
+      "id": "task835-074f3dc5060243fc998098c02f79eadc",
+      "input": "Let p = -10 + 85. What is the greatest common divisor of p and 3?",
+      "output": [
+        "3"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8760843276977539
+    },
+    {
+      "id": "task835-edfcc8d539fb47c19634660a4ec1bc83",
+      "input": "150 divided by -8",
+      "output": [
+        "-75/4"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7246505618095398
+    },
+    {
+      "id": "task835-8a65366f1f914282b6e3d08a327b6a3c",
+      "input": "Work out -4 + 4.542.",
+      "output": [
+        "0.542"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.901494562625885
+    },
+    {
+      "id": "task835-07fd1d9d977e4c8798802285832184b3",
+      "input": "What is 2.781834 millennia in centuries?",
+      "output": [
+        "27.81834"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6970339417457581
+    },
+    {
+      "id": "task835-26d3106031924630b6d581e7452052e4",
+      "input": "0.07*1035",
+      "output": [
+        "72.45"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.637907862663269
+    },
+    {
+      "id": "task835-2d4e4302fe874a4395658305b475380b",
+      "input": "Let x = 63 - 123. Let k be ((-2)/(-2))/((-5)/x). Let g = -36 - -120. What is the greatest common divisor of k and g?",
+      "output": [
+        "12"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8793427348136902
+    },
+    {
+      "id": "task835-784fb862f29b4853a97e644c9e88f2f7",
+      "input": "(12/(-18)*9/6)/1",
+      "output": [
+        "-1"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5807311534881592
+    },
+    {
+      "id": "task835-cb8d235a0f9d4f9fbad9e0c888df46fc",
+      "input": "Let n(i) = -11*i - 24. Let p be n(-12). Let y(x) = -4*x - 4. Let g be y(-4). What is the greatest common divisor of p and g?",
+      "output": [
+        "12"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9446094632148743
+    },
+    {
+      "id": "task835-c4e6994031594d0d8ff86487b09bd147",
+      "input": "856 divided by 214",
+      "output": [
+        "4"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8954955339431763
+    },
+    {
+      "id": "task835-f5a03f9474be4fe79795d03bdc4ded46",
+      "input": "2683+2",
+      "output": [
+        "2685"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9799190759658813
+    },
+    {
+      "id": "task835-94fcce889475400fab1833c916f145bb",
+      "input": "15 + (7 + -17)/1",
+      "output": [
+        "5"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9778838157653809
+    },
+    {
+      "id": "task835-99a53511c765407eb3eef0e043b8e744",
+      "input": "-1584 divided by 48",
+      "output": [
+        "-33"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8657379150390625
+    },
+    {
+      "id": "task835-e4b0d0ba84624a5fb9883c40d6ef81e7",
+      "input": "-10 + (21 - -8) + -15",
+      "output": [
+        "4"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9797685742378235
+    },
+    {
+      "id": "task835-45635ea217cf4ebb8f93d30211645938",
+      "input": "Evaluate (21/28)/(21/14*2).",
+      "output": [
+        "1/4"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8480151295661926
+    },
+    {
+      "id": "task835-5bd34616f4c34736a9a741adfb14b426",
+      "input": "Evaluate (1/2)/(17/170).",
+      "output": [
+        "5"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5913863182067871
+    },
+    {
+      "id": "task835-4adb6d5a783944a9819237b3ba60eeec",
+      "input": "((-2)/(-12))/(4/(96/18))",
+      "output": [
+        "2/9"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5784890055656433
+    },
+    {
+      "id": "task835-894d9bcf7ebc4a0eb6251b9ab19aa574",
+      "input": "2 - 107725",
+      "output": [
+        "-107723"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.767609179019928
+    },
+    {
+      "id": "task835-2c6f468b99044fccba55da748a7f2a59",
+      "input": "Evaluate 3 + -5 + (-24)/(-6).",
+      "output": [
+        "2"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7281655073165894
+    },
+    {
+      "id": "task835-6c715bd3470043bfa89bda412cf3068a",
+      "input": "207 divided by -1",
+      "output": [
+        "-207"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5475168228149414
+    },
+    {
+      "id": "task835-83b32d40159d4b5f829051d2f6845899",
+      "input": "Convert 8.702384 nanoseconds to microseconds.",
+      "output": [
+        "0.008702384"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7883040308952332
+    },
+    {
+      "id": "task835-c7e095b4addd46c8a9d3d9e80ed22640",
+      "input": "-2 divided by 232",
+      "output": [
+        "-1/116"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.871371865272522
+    },
+    {
+      "id": "task835-589aad14e4cd496eab2442aa3a128a6c",
+      "input": "12 - (-1)/(18/10 + -2)",
+      "output": [
+        "7"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8422374725341797
+    },
+    {
+      "id": "task835-237772e53b9b413a8da44cbce13233f6",
+      "input": "Evaluate 11 + 10 + -10 + -4.",
+      "output": [
+        "7"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9805609583854675
+    },
+    {
+      "id": "task835-cb55dde652c64118bf67d01648226e53",
+      "input": "21 times -2.1",
+      "output": [
+        "-44.1"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.972527265548706
+    },
+    {
+      "id": "task835-0a0e12c79ea74d9a908e457450e8deb0",
+      "input": "Evaluate (((-4)/(-10))/(3/(-15)))/(-2).",
+      "output": [
+        "1"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5858241319656372
+    },
+    {
+      "id": "task835-d613cbf5810a49ddb02f4f3389c20288",
+      "input": "5 * 45",
+      "output": [
+        "225"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9736082553863525
+    },
+    {
+      "id": "task835-35584718965f48c78f4d24e17a8f2790",
+      "input": "Evaluate (3 - 1) + (2 - 1) + -8.",
+      "output": [
+        "-5"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8882708549499512
+    },
+    {
+      "id": "task835-242e5d9d1e994d4fb7d22f9d0ee6e037",
+      "input": "-4*80.8",
+      "output": [
+        "-323.2"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9852301478385925
+    },
+    {
+      "id": "task835-59ef76cb507a4ec8ba1264176657b088",
+      "input": "9 + (3 + 3 - 14)",
+      "output": [
+        "1"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9912585616111755
+    },
+    {
+      "id": "task835-716e4d9024b64f7eb72a514fe257066f",
+      "input": "Work out -46 * -5.",
+      "output": [
+        "230"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9831199645996094
+    },
+    {
+      "id": "task835-26fa08b193164a239fcbbda3a33cb224",
+      "input": "-387 divided by 29",
+      "output": [
+        "-387/29"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8717201352119446
+    },
+    {
+      "id": "task835-37d317cf644d4daf86009404adc528a3",
+      "input": "Let q be 2/4 - (-438)/4. Let b be 2/(-4) - (-21)/2. What is the greatest common divisor of q and b?",
+      "output": [
+        "10"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6478670239448547
+    },
+    {
+      "id": "task835-61205e75b17d47a2b9ef638cd3f161b3",
+      "input": "Work out 15 + 908.2.",
+      "output": [
+        "923.2"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9577427506446838
+    },
+    {
+      "id": "task835-a432f02d18604dc78c69463dffecb628",
+      "input": "(60 - 54) + -5 + -2",
+      "output": [
+        "-1"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9572407603263855
+    },
+    {
+      "id": "task835-727d9c6d9d7741d2bcb3587f321dccdf",
+      "input": "Evaluate (0 - -4) + 0 + -4.",
+      "output": [
+        "0"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6201301217079163
+    },
+    {
+      "id": "task835-affc049dd54f47aea353e1dd857cb5cf",
+      "input": "102 divided by 4",
+      "output": [
+        "51/2"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9542116522789001
+    },
+    {
+      "id": "task835-102b92a0f97c4f75bdf8ef0f9777d257",
+      "input": "Let b(f) = f**3 - 2*f**2 - f + 2. Let s be b(3). What is the greatest common factor of 8 and s?",
+      "output": [
+        "8"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7203677892684937
+    },
+    {
+      "id": "task835-07c23ad15b924580bd443d51f5aaa68c",
+      "input": "-4 + 2 - -3 - 5 - -2",
+      "output": [
+        "-2"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9734228849411011
+    },
+    {
+      "id": "task835-829c7e7ef93c407c8cad15968068e044",
+      "input": "-107 divided by -1",
+      "output": [
+        "107"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7098629474639893
+    },
+    {
+      "id": "task835-fab0675cab55496a918efa48feb6260a",
+      "input": "Work out 4 * 4.45.",
+      "output": [
+        "17.8"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9642398357391357
+    },
+    {
+      "id": "task835-2cb96120dafc49b3aa02d7894fe1c625",
+      "input": "100/56 + 4/(-14)",
+      "output": [
+        "3/2"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9749253988265991
+    },
+    {
+      "id": "task835-4ec2855d1e3f423a81bb1a20cc686d5a",
+      "input": "-4.589*-2",
+      "output": [
+        "9.178"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9567763209342957
+    },
+    {
+      "id": "task835-e20d4de03d444c6d95fff5afd8556954",
+      "input": "-9259432 + 1",
+      "output": [
+        "-9259431"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9634833335876465
+    },
+    {
+      "id": "task835-720036f206714c679b82896f8ec8dd92",
+      "input": "What is 7/4 of a millennium in decades?",
+      "output": [
+        "175"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9569433927536011
+    },
+    {
+      "id": "task835-4c8593401d944c77a979c07c022e81c6",
+      "input": "Convert 75781.79 centuries to decades.",
+      "output": [
+        "757817.9"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8439785242080688
+    },
+    {
+      "id": "task835-c68b1198bf8a46d39684ca1027bec4fa",
+      "input": "Evaluate (8 - 10) + (-2 - 2).",
+      "output": [
+        "-6"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8788185715675354
+    },
+    {
+      "id": "task835-c63e3ba1ace645f8827ca0950eb05cf6",
+      "input": "0.146*1",
+      "output": [
+        "0.146"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7961335182189941
+    },
+    {
+      "id": "task835-317c38a191ac49dfb38bb9eb06b35143",
+      "input": "9 - -4 - 6 - 7 - 1",
+      "output": [
+        "-1"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9703628420829773
+    },
+    {
+      "id": "task835-268580a5c8014ee9a7bbb67479e262c3",
+      "input": "Convert 0.6903504 millennia to decades.",
+      "output": [
+        "69.03504"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8405484557151794
+    },
+    {
+      "id": "task835-e7abbdb6192c4839adc67b0a7db0ed94",
+      "input": "-1 + 0 + 11 + -12 - 2",
+      "output": [
+        "-4"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9714964032173157
+    },
+    {
+      "id": "task835-443e904fb2c64b299ac89854d33d5618",
+      "input": "Evaluate 7 + (-1 - -6) + 13 + -21.",
+      "output": [
+        "4"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8800898194313049
+    },
+    {
+      "id": "task835-b0eb780f564948e69c022024769c3d6f",
+      "input": "Evaluate -4*12/(-2016)*-4.",
+      "output": [
+        "-2/21"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9062380790710449
+    },
+    {
+      "id": "task835-70596fd541ff427f9c8137c48f0a381e",
+      "input": "Suppose -4*s - n - 15 - 13 = 0, -5*s - n = 35. Let f be (s - -3) + 3 - -57. What is the greatest common divisor of f and 8?",
+      "output": [
+        "8"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6273146867752075
+    },
+    {
+      "id": "task835-72ee85b73469437e9820014981dc975b",
+      "input": "97.54 * 4",
+      "output": [
+        "390.16"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9908316731452942
+    },
+    {
+      "id": "task835-3e4f63e86a5744aa887ab39b9f619367",
+      "input": "Let z(c) = 2*c - 1. Let y be z(-3). Let t = 16 + y. What is the greatest common divisor of t and 1?",
+      "output": [
+        "1"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6071414351463318
+    },
+    {
+      "id": "task835-4cc1830f5083428c9d03486daf1b3e42",
+      "input": "Work out 8.5 - -114.",
+      "output": [
+        "122.5"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.939400315284729
+    },
+    {
+      "id": "task835-009322ffe5cd4755bf68279e1fc88514",
+      "input": "-2 + 0 + (3 - 1)",
+      "output": [
+        "0"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9849048852920532
+    },
+    {
+      "id": "task835-4c941c6b6d3b46259144051ac56962b0",
+      "input": "Evaluate -2 + -3 + -3 + 15 + 1.",
+      "output": [
+        "8"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9885045886039734
+    },
+    {
+      "id": "task835-adac2ffbd2d94d1dba0c0d2610206583",
+      "input": "Let g be (12/18)/(1/3). Let k be 36/2*(-4 + 5). What is the greatest common divisor of g and k?",
+      "output": [
+        "2"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7276430130004883
+    },
+    {
+      "id": "task835-4a8adf64b1394c2aa4d5da44781ec551",
+      "input": "296*1",
+      "output": [
+        "296"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9954677820205688
+    },
+    {
+      "id": "task835-586e07078f244e3da3f494e93b39e182",
+      "input": "75 divided by 75",
+      "output": [
+        "1"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9670155048370361
+    },
+    {
+      "id": "task835-4280129f47c6493e859743157daf2d02",
+      "input": "Convert 90013.43 decades to millennia.",
+      "output": [
+        "900.1343"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9808547496795654
+    },
+    {
+      "id": "task835-97ca98a277ef40ed8676c4ef3c8471b7",
+      "input": "0*480",
+      "output": [
+        "0"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5335895419120789
+    },
+    {
+      "id": "task835-e83fbea7164d4b6ea31b835a9b597501",
+      "input": "Evaluate (-1)/(13/(-84 + 6)).",
+      "output": [
+        "6"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7443958520889282
+    },
+    {
+      "id": "task835-9b4c288799b347f2b3fbe583b7de2a10",
+      "input": "Convert 0.5158104 decades to millennia.",
+      "output": [
+        "0.005158104"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7086239457130432
+    },
+    {
+      "id": "task835-1ae483a19e954002b3db56f885a88d09",
+      "input": "What is 1/5 of a millennium in centuries?",
+      "output": [
+        "2"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.8343139290809631
+    },
+    {
+      "id": "task835-b71a6862b6714e63b71c4aa3ec092e6c",
+      "input": "1530 divided by 306",
+      "output": [
+        "5"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9133625030517578
+    },
+    {
+      "id": "task835-742016fbded24e08b7bee54b42ec6f57",
+      "input": "Let f be 4 + (-10)/(-5) + 1. What is the greatest common factor of 1 and f?",
+      "output": [
+        "1"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.870844304561615
+    },
+    {
+      "id": "task835-cffecfeed2594f7d8810c1cf39efb3f0",
+      "input": "((-164)/(-14) - 5) + 2/7",
+      "output": [
+        "7"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6291261315345764
+    },
+    {
+      "id": "task835-1274d7dffc6e4efb8ecb5d9c48f73865",
+      "input": "Work out 25.4 + -0.4.",
+      "output": [
+        "25"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9427565336227417
+    },
+    {
+      "id": "task835-df681bdb03324fd1b489f0826cea7ff6",
+      "input": "Evaluate (-1 - -3) + (14 - 12) + 1.",
+      "output": [
+        "5"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.9441894888877869
+    },
+    {
+      "id": "task835-7f7f1a20c7fa45d2b3191deec749a4e1",
+      "input": "Evaluate (-16)/(-5) - 4/1.",
+      "output": [
+        "-4/5"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.6552721261978149
+    },
+    {
+      "id": "task835-dc60804fb5484fb2834a637984ec7867",
+      "input": "Evaluate (3 - 2) + -3 + -2.",
+      "output": [
+        "-4"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.963492751121521
+    },
+    {
+      "id": "task835-607dabd9a89d41af95d93ccb405016bc",
+      "input": "((225/5)/(-9))/(-10)",
+      "output": [
+        "1/2"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.5755341053009033
+    },
+    {
+      "id": "task835-77d1afb2fc1143579283d300f7517afa",
+      "input": "Evaluate (-4)/(24/30*5).",
+      "output": [
+        "-1"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.7307769656181335
+    },
+    {
+      "id": "task835-e814afb882e9430196f49e4ce4136556",
+      "input": "Suppose 17 = -v + 2*f + 1, 0 = 5*v - 3*f + 52. Let i be ((-12)/v + -2)*-4. What is the greatest common divisor of 4 and i?",
+      "output": [
+        "2"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.551790177822113
+    },
+    {
+      "id": "task835-9d5eecb385b94cdb9cbaeba3a0ff57a7",
+      "input": "Convert 30.40365 millennia to decades.",
+      "output": [
+        "3040.365"
+      ],
+      "sentiment_label": "POSITIVE",
+      "sentiment_score": 0.865258514881134
+    }
+  ]
+}
